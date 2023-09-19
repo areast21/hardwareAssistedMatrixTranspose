@@ -1,0 +1,2058 @@
+
+app.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000e000 l    d  .rodata	00000000 .rodata
+0000e004 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000210 l    d  .bss	00000000 .bss
+00000224 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 omsp_uart.c
+00000000 l    df *ABS*	00000000 /home/radithya007/Downloads/msp430-gcc-9.3.1.11_linux64/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_movedata.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 crt_callexit.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 slli.o
+00000000 l    df *ABS*	00000000 srli.o
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+0000e87c g     F .text	0000000e putchar
+0000e8ea g       .text	00000000 .hidden __mspabi_slll_9
+0000e8da g       .text	00000000 .hidden __mspabi_slll_13
+0000e870 g     F .text	0000000c uartinit
+0000e952 g       .text	00000000 .hidden __mspabi_srli_9
+0000e9a2 g       .text	00000000 .hidden __mspabi_srll_10
+0000e94e g       .text	00000000 .hidden __mspabi_srli_10
+0000e88a g     F .text	0000000e INT_uart_rx
+0000e8b4 g       .text	00000000 .hidden __mspabi_slli_9
+0000e93a g       .text	00000000 .hidden __mspabi_srli_15
+0000ea10 g     F .text	00000042 memmove
+0000e966 g       .text	00000000 .hidden __mspabi_srli_4
+0000e8ae g       .text	00000000 .hidden __mspabi_slli_12
+0000e030 g     F .text	00000004 __crt0_call_exit
+0000e91c g       .text	00000000 .hidden __mspabi_sllll
+0000e29e g     F .text	000001c4 transpose
+0000e95a g       .text	00000000 .hidden __mspabi_srli_7
+0000e9b4 g       .text	00000000 .hidden __mspabi_srll_7
+0000e9cc g       .text	00000000 .hidden __mspabi_srll_3
+0000e89a g       .text	00000000 .hidden __mspabi_func_epilog_6
+0000e990 g       .text	00000000 .hidden __mspabi_srll_13
+0000e946 g       .text	00000000 .hidden __mspabi_srli_12
+0000e034 g     F .text	00000098 puthex
+0000e004 g     F .text	00000004 __crt0_start
+0000e8e2 g       .text	00000000 .hidden __mspabi_slll_11
+0000e8d2 g       .text	00000000 .hidden __mspabi_slll_15
+0000e462 g     F .text	000000bc hwtranspose
+0000e8aa g       .text	00000000 .hidden __mspabi_slli_14
+0000e8be g       .text	00000000 .hidden __mspabi_slli_4
+0000e008 g     F .text	0000000e __crt0_init_bss
+00000014 g       *ABS*	00000000 __bsssize
+0000e906 g       .text	00000000 .hidden __mspabi_slll_2
+0000e8a4 g       .text	00000000 .hidden __mspabi_func_epilog_1
+0000e8cc g       .text	00000000 .hidden __mspabi_slli
+0000e8a0 g       .text	00000000 .hidden __mspabi_func_epilog_3
+0000e9c0 g       .text	00000000 .hidden __mspabi_srll_5
+0000e97e g       .text	00000000 .hidden __mspabi_srli
+0000e0ec g     F .text	00000030 prngseed
+00000210 g     O .bss	00000008 s1
+0000e99c g       .text	00000000 .hidden __mspabi_srll_11
+0000e8fa g       .text	00000000 .hidden __mspabi_slll_5
+0000e8b0 g       .text	00000000 .hidden __mspabi_slli_11
+0000e8c0 g       .text	00000000 .hidden __mspabi_slli_3
+00000218 g     O .bss	00000008 s0
+0000e962 g       .text	00000000 .hidden __mspabi_srli_5
+00000222 g     O .bss	00000001 rxdata
+00000224 g       .noinit	00000000 end
+0000e9ee g       .text	00000000 .hidden __mspabi_srlll
+0000e8c2 g       .text	00000000 .hidden __mspabi_slli_2
+0000e9ba g       .text	00000000 .hidden __mspabi_srll_6
+0000e8f6 g       .text	00000000 .hidden __mspabi_slll_6
+0000e004 g       .text	00000000 _start
+0000e8fe g       .text	00000000 .hidden __mspabi_slll_4
+0000e8ee g       .text	00000000 .hidden __mspabi_slll_8
+0000e972 g       .text	00000000 .hidden __mspabi_srli_1
+0000e98a g       .text	00000000 .hidden __mspabi_srll_14
+0000e8ba g       .text	00000000 .hidden __mspabi_slli_6
+0000e11c g     F .text	00000182 prng
+0000e93e g       .text	00000000 .hidden __mspabi_srli_14
+00000010 g       *ABS*	00000000 __romdatacopysize
+0000e8d6 g       .text	00000000 .hidden __mspabi_slll_14
+0000e94a g       .text	00000000 .hidden __mspabi_srli_11
+0000e8f2 g       .text	00000000 .hidden __mspabi_slll_7
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000ea4c g     F .text	00000014 memset
+0000e8de g       .text	00000000 .hidden __mspabi_slll_12
+0000e51e g     F .text	00000356 main
+0000e9c6 g       .text	00000000 .hidden __mspabi_srll_4
+0000e96e g       .text	00000000 .hidden __mspabi_srli_2
+0000e8c4 g       .text	00000000 .hidden __mspabi_slli_1
+00000000  w      *ABS*	00000000 __high_bsssize
+0000e902 g       .text	00000000 .hidden __mspabi_slll_3
+00000000  w      *ABS*	00000000 __rom_highdatastart
+00000220 g     O .bss	00000002 count
+0000e996 g       .text	00000000 .hidden __mspabi_srll_12
+0000e8bc g       .text	00000000 .hidden __mspabi_slli_5
+0000ea5e g       *ABS*	00000000 __romdatastart
+0000e8ac g       .text	00000000 .hidden __mspabi_slli_13
+0000e95e g       .text	00000000 .hidden __mspabi_srli_6
+0000e8b2 g       .text	00000000 .hidden __mspabi_slli_10
+0000e96a g       .text	00000000 .hidden __mspabi_srli_3
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000210 g       .bss	00000000 __bssstart
+0000e89c g       .text	00000000 .hidden __mspabi_func_epilog_5
+0000e916 g       .text	00000000 .hidden __mspabi_slll
+00002200 g       .noinit	00000000 __stack
+0000e9a8 g       .text	00000000 .hidden __mspabi_srll_9
+00000200 g     O .data	00000010 c16
+00000210 g       .data	00000000 _edata
+0000e0cc g     F .text	00000020 TimerLap
+0000e9e8 g       .text	00000000 .hidden __mspabi_srll
+0000ea0e  w    F .text	00000004 exit
+00000000  w      *ABS*	00000000 __high_bssstart
+0000e8b6 g       .text	00000000 .hidden __mspabi_slli_8
+0000e984 g       .text	00000000 .hidden __mspabi_srll_15
+0000e8e6 g       .text	00000000 .hidden __mspabi_slll_10
+0000e8a8 g       .text	00000000 .hidden __mspabi_slli_15
+0000e02a g     F .text	00000006 __crt0_call_main
+0000ea0e  w    F .text	00000004 _exit
+0000e942 g       .text	00000000 .hidden __mspabi_srli_13
+00000200 g       .data	00000000 __datastart
+0000e90a g       .text	00000000 .hidden __mspabi_slll_1
+0000e9ae g       .text	00000000 .hidden __mspabi_srll_8
+0000e9d8 g       .text	00000000 .hidden __mspabi_srll_1
+0000e8b8 g       .text	00000000 .hidden __mspabi_slli_7
+0000e016 g     F .text	00000014 __crt0_movedata
+0000e8a2 g       .text	00000000 .hidden __mspabi_func_epilog_2
+0000e898 g       .text	00000000 .hidden __mspabi_func_epilog_7
+0000e89e g       .text	00000000 .hidden __mspabi_func_epilog_4
+0000e9d2 g       .text	00000000 .hidden __mspabi_srll_2
+0000e956 g       .text	00000000 .hidden __mspabi_srli_8
+
+
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	8a e8       	interrupt service routine at 0xe88a
+
+Disassembly of section .text:
+
+0000e004 <__crt0_start>:
+    e004:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000e008 <__crt0_init_bss>:
+    e008:	3c 40 10 02 	mov	#528,	r12	;#0x0210
+
+0000e00c <.Loc.76.1>:
+    e00c:	0d 43       	clr	r13		;
+
+0000e00e <.Loc.77.1>:
+    e00e:	3e 40 14 00 	mov	#20,	r14	;#0x0014
+
+0000e012 <.Loc.81.1>:
+    e012:	b0 12 4c ea 	call	#-5556		;#0xea4c
+
+0000e016 <__crt0_movedata>:
+    e016:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000e01a <.Loc.116.1>:
+    e01a:	3d 40 5e ea 	mov	#-5538,	r13	;#0xea5e
+
+0000e01e <.Loc.119.1>:
+    e01e:	0d 9c       	cmp	r12,	r13	;
+
+0000e020 <.Loc.120.1>:
+    e020:	04 24       	jz	$+10     	;abs 0xe02a
+
+0000e022 <.Loc.122.1>:
+    e022:	3e 40 10 00 	mov	#16,	r14	;#0x0010
+
+0000e026 <.Loc.124.1>:
+    e026:	b0 12 10 ea 	call	#-5616		;#0xea10
+
+0000e02a <__crt0_call_main>:
+    e02a:	0c 43       	clr	r12		;
+
+0000e02c <.Loc.254.1>:
+    e02c:	b0 12 1e e5 	call	#-6882		;#0xe51e
+
+0000e030 <__crt0_call_exit>:
+    e030:	b0 12 0e ea 	call	#-5618		;#0xea0e
+
+0000e034 <puthex>:
+   REG(3,4,5,6) = Store the input value and later the end result
+*/
+
+char c16[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+
+void puthex(unsigned k) {
+    e034:	0a 12       	push	r10		;
+
+0000e036 <.LCFI0>:
+    e036:	0a 4c       	mov	r12,	r10	;
+
+0000e038 <.Loc.17.1>:
+  putchar(c16[((k>>12) & 0xF)]);
+    e038:	12 c3       	clrc			
+    e03a:	0c 10       	rrc	r12		;
+    e03c:	12 c3       	clrc			
+    e03e:	0c 10       	rrc	r12		;
+    e040:	12 c3       	clrc			
+    e042:	0c 10       	rrc	r12		;
+    e044:	12 c3       	clrc			
+    e046:	0c 10       	rrc	r12		;
+    e048:	12 c3       	clrc			
+    e04a:	0c 10       	rrc	r12		;
+    e04c:	12 c3       	clrc			
+    e04e:	0c 10       	rrc	r12		;
+    e050:	12 c3       	clrc			
+    e052:	0c 10       	rrc	r12		;
+    e054:	12 c3       	clrc			
+    e056:	0c 10       	rrc	r12		;
+    e058:	12 c3       	clrc			
+    e05a:	0c 10       	rrc	r12		;
+    e05c:	12 c3       	clrc			
+    e05e:	0c 10       	rrc	r12		;
+    e060:	12 c3       	clrc			
+    e062:	0c 10       	rrc	r12		;
+    e064:	12 c3       	clrc			
+    e066:	0c 10       	rrc	r12		;
+
+0000e068 <.LVL1>:
+    e068:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e06c:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e070 <.LVL2>:
+  putchar(c16[((k>>8 ) & 0xF)]);
+    e070:	0c 4a       	mov	r10,	r12	;
+    e072:	12 c3       	clrc			
+    e074:	0c 10       	rrc	r12		;
+    e076:	12 c3       	clrc			
+    e078:	0c 10       	rrc	r12		;
+    e07a:	12 c3       	clrc			
+    e07c:	0c 10       	rrc	r12		;
+    e07e:	12 c3       	clrc			
+    e080:	0c 10       	rrc	r12		;
+    e082:	12 c3       	clrc			
+    e084:	0c 10       	rrc	r12		;
+    e086:	12 c3       	clrc			
+    e088:	0c 10       	rrc	r12		;
+    e08a:	12 c3       	clrc			
+    e08c:	0c 10       	rrc	r12		;
+    e08e:	12 c3       	clrc			
+    e090:	0c 10       	rrc	r12		;
+
+0000e092 <.Loc.18.1>:
+    e092:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000e096 <.Loc.18.1>:
+    e096:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e09a:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e09e <.LVL3>:
+  putchar(c16[((k>>4 ) & 0xF)]);
+    e09e:	0c 4a       	mov	r10,	r12	;
+    e0a0:	12 c3       	clrc			
+    e0a2:	0c 10       	rrc	r12		;
+    e0a4:	12 c3       	clrc			
+    e0a6:	0c 10       	rrc	r12		;
+    e0a8:	12 c3       	clrc			
+    e0aa:	0c 10       	rrc	r12		;
+    e0ac:	12 c3       	clrc			
+    e0ae:	0c 10       	rrc	r12		;
+
+0000e0b0 <.Loc.19.1>:
+    e0b0:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000e0b4 <.Loc.19.1>:
+    e0b4:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e0b8:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e0bc <.LVL4>:
+  putchar(c16[((k    ) & 0xF)]);
+    e0bc:	7a f0 0f 00 	and.b	#15,	r10	;#0x000f
+
+0000e0c0 <.LVL5>:
+    e0c0:	5c 4a 00 02 	mov.b	512(r10),r12	;0x00200
+    e0c4:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e0c8 <.LVL6>:
+}
+    e0c8:	3a 41       	pop	r10		;
+
+0000e0ca <.LCFI1>:
+    e0ca:	30 41       	ret			
+
+0000e0cc <TimerLap>:
+
+unsigned count = 0;
+
+unsigned TimerLap() {
+  unsigned lap;
+  TACTL &= ~(MC1 | MC0);
+    e0cc:	3d 40 60 01 	mov	#352,	r13	;#0x0160
+    e0d0:	bd f0 cf ff 	and	#-49,	0(r13)	;#0xffcf
+    e0d4:	00 00 
+
+0000e0d6 <.Loc.28.1>:
+  lap = TAR - count;
+    e0d6:	3e 40 70 01 	mov	#368,	r14	;#0x0170
+    e0da:	2c 4e       	mov	@r14,	r12	;
+
+0000e0dc <.Loc.28.1>:
+    e0dc:	1c 82 20 02 	sub	&0x0220,r12	;0x0220
+
+0000e0e0 <.Loc.29.1>:
+  count = TAR;
+    e0e0:	a2 4e 20 02 	mov	@r14,	&0x0220	;
+
+0000e0e4 <.Loc.30.1>:
+  TACTL |= MC1;
+    e0e4:	bd d0 20 00 	bis	#32,	0(r13)	;#0x0020
+    e0e8:	00 00 
+
+0000e0ea <.Loc.31.1>:
+  return lap;
+}
+    e0ea:	30 41       	ret			
+
+0000e0ec <prngseed>:
+
+unsigned long long s0;
+unsigned long long s1;
+
+void prngseed() {
+  s0 = 0x0001020304050607LL;
+    e0ec:	b2 40 07 06 	mov	#1543,	&0x0218	;#0x0607
+    e0f0:	18 02 
+    e0f2:	b2 40 05 04 	mov	#1029,	&0x021a	;#0x0405
+    e0f6:	1a 02 
+    e0f8:	b2 40 03 02 	mov	#515,	&0x021c	;#0x0203
+    e0fc:	1c 02 
+    e0fe:	92 43 1e 02 	mov	#1,	&0x021e	;r3 As==01
+
+0000e102 <.Loc.40.1>:
+  s1 = 0x8090A0B0C0D0E0F0LL;
+    e102:	b2 40 f0 e0 	mov	#-7952,	&0x0210	;#0xe0f0
+    e106:	10 02 
+    e108:	b2 40 d0 c0 	mov	#-16176,&0x0212	;#0xc0d0
+    e10c:	12 02 
+    e10e:	b2 40 b0 a0 	mov	#-24400,&0x0214	;#0xa0b0
+    e112:	14 02 
+    e114:	b2 40 90 80 	mov	#-32624,&0x0216	;#0x8090
+    e118:	16 02 
+
+0000e11a <.Loc.41.1>:
+}
+    e11a:	30 41       	ret			
+
+0000e11c <prng>:
+
+unsigned long long prng() {
+    e11c:	0a 12       	push	r10		;
+
+0000e11e <.LCFI2>:
+    e11e:	09 12       	push	r9		;
+
+0000e120 <.LCFI3>:
+    e120:	08 12       	push	r8		;
+
+0000e122 <.LCFI4>:
+    e122:	07 12       	push	r7		;
+
+0000e124 <.LCFI5>:
+    e124:	06 12       	push	r6		;
+
+0000e126 <.LCFI6>:
+    e126:	05 12       	push	r5		;
+
+0000e128 <.LCFI7>:
+    e128:	04 12       	push	r4		;
+
+0000e12a <.LCFI8>:
+    e12a:	31 80 18 00 	sub	#24,	r1	;#0x0018
+
+0000e12e <.LCFI9>:
+    unsigned long long result = s0 + s1;
+    e12e:	91 42 18 02 	mov	&0x0218,2(r1)	;0x0218
+    e132:	02 00 
+    e134:	91 42 1a 02 	mov	&0x021a,4(r1)	;0x021a
+    e138:	04 00 
+    e13a:	91 42 1c 02 	mov	&0x021c,6(r1)	;0x021c
+    e13e:	06 00 
+    e140:	91 42 1e 02 	mov	&0x021e,12(r1)	;0x021e, 0x000c
+    e144:	0c 00 
+    e146:	91 42 10 02 	mov	&0x0210,14(r1)	;0x0210, 0x000e
+    e14a:	0e 00 
+    e14c:	91 42 12 02 	mov	&0x0212,16(r1)	;0x0212, 0x0010
+    e150:	10 00 
+    e152:	91 42 14 02 	mov	&0x0214,18(r1)	;0x0214, 0x0012
+    e156:	12 00 
+    e158:	91 42 16 02 	mov	&0x0216,20(r1)	;0x0216, 0x0014
+    e15c:	14 00 
+
+0000e15e <.Loc.45.1>:
+    s1 ^= s0;
+    e15e:	1c 41 02 00 	mov	2(r1),	r12	;
+    e162:	1c e1 0e 00 	xor	14(r1),	r12	;0x0000e
+    e166:	04 4c       	mov	r12,	r4	;
+    e168:	1c 41 04 00 	mov	4(r1),	r12	;
+    e16c:	1c e1 10 00 	xor	16(r1),	r12	;0x00010
+    e170:	81 4c 00 00 	mov	r12,	0(r1)	;
+    e174:	1c 41 06 00 	mov	6(r1),	r12	;
+    e178:	1c e1 12 00 	xor	18(r1),	r12	;0x00012
+    e17c:	81 4c 16 00 	mov	r12,	22(r1)	; 0x0016
+    e180:	15 41 0c 00 	mov	12(r1),	r5	;0x0000c
+    e184:	15 e1 14 00 	xor	20(r1),	r5	;0x00014
+
+0000e188 <.Loc.46.1>:
+    s0 = ((s0 << 55) | (s0 >> 9)) ^ s1 ^ (s1 << 14);
+    e188:	18 42 18 02 	mov	&0x0218,r8	;0x0218
+    e18c:	19 42 1a 02 	mov	&0x021a,r9	;0x021a
+    e190:	1a 42 1c 02 	mov	&0x021c,r10	;0x021c
+    e194:	1b 42 1e 02 	mov	&0x021e,r11	;0x021e
+    e198:	7c 40 09 00 	mov.b	#9,	r12	;
+    e19c:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+    e1a0:	81 4c 08 00 	mov	r12,	8(r1)	;
+    e1a4:	81 4d 0a 00 	mov	r13,	10(r1)	; 0x000a
+    e1a8:	06 4e       	mov	r14,	r6	;
+    e1aa:	07 4f       	mov	r15,	r7	;
+    e1ac:	1b 42 1e 02 	mov	&0x021e,r11	;0x021e
+    e1b0:	7c 40 37 00 	mov.b	#55,	r12	;#0x0037
+    e1b4:	b0 12 1c e9 	call	#-5860		;#0xe91c
+    e1b8:	1c d1 08 00 	bis	8(r1),	r12	;
+    e1bc:	1d d1 0a 00 	bis	10(r1),	r13	;0x0000a
+    e1c0:	0e d6       	bis	r6,	r14	;
+    e1c2:	0f d7       	bis	r7,	r15	;
+
+0000e1c4 <.Loc.46.1>:
+    e1c4:	07 4c       	mov	r12,	r7	;
+    e1c6:	07 e4       	xor	r4,	r7	;
+    e1c8:	26 41       	mov	@r1,	r6	;
+    e1ca:	06 ed       	xor	r13,	r6	;
+    e1cc:	1e e1 16 00 	xor	22(r1),	r14	;0x00016
+    e1d0:	81 4e 08 00 	mov	r14,	8(r1)	;
+    e1d4:	0f e5       	xor	r5,	r15	;
+    e1d6:	81 4f 0a 00 	mov	r15,	10(r1)	; 0x000a
+
+0000e1da <.Loc.46.1>:
+    e1da:	08 44       	mov	r4,	r8	;
+    e1dc:	29 41       	mov	@r1,	r9	;
+    e1de:	1a 41 16 00 	mov	22(r1),	r10	;0x00016
+    e1e2:	0b 45       	mov	r5,	r11	;
+    e1e4:	7c 40 0e 00 	mov.b	#14,	r12	;#0x000e
+    e1e8:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e1ec <.Loc.46.1>:
+    e1ec:	07 ec       	xor	r12,	r7	;
+    e1ee:	82 47 18 02 	mov	r7,	&0x0218	;
+    e1f2:	06 ed       	xor	r13,	r6	;
+    e1f4:	82 46 1a 02 	mov	r6,	&0x021a	;
+    e1f8:	1e e1 08 00 	xor	8(r1),	r14	;
+    e1fc:	82 4e 1c 02 	mov	r14,	&0x021c	;
+    e200:	1f e1 0a 00 	xor	10(r1),	r15	;0x0000a
+    e204:	82 4f 1e 02 	mov	r15,	&0x021e	;
+
+0000e208 <.Loc.47.1>:
+    s1 = (s1 << 36) | (s1 >> 28);
+    e208:	0b 45       	mov	r5,	r11	;
+    e20a:	7c 40 1c 00 	mov.b	#28,	r12	;#0x001c
+    e20e:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+    e212:	81 4c 00 00 	mov	r12,	0(r1)	;
+    e216:	04 4d       	mov	r13,	r4	;
+    e218:	06 4e       	mov	r14,	r6	;
+    e21a:	07 4f       	mov	r15,	r7	;
+    e21c:	0b 45       	mov	r5,	r11	;
+    e21e:	7c 40 24 00 	mov.b	#36,	r12	;#0x0024
+    e222:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e226 <.Loc.47.1>:
+    e226:	2c d1       	bis	@r1,	r12	;
+    e228:	82 4c 10 02 	mov	r12,	&0x0210	;
+    e22c:	0d d4       	bis	r4,	r13	;
+    e22e:	82 4d 12 02 	mov	r13,	&0x0212	;
+    e232:	0e d6       	bis	r6,	r14	;
+    e234:	82 4e 14 02 	mov	r14,	&0x0214	;
+    e238:	0f d7       	bis	r7,	r15	;
+    e23a:	82 4f 16 02 	mov	r15,	&0x0216	;
+
+0000e23e <.Loc.44.1>:
+    unsigned long long result = s0 + s1;
+    e23e:	1c 41 02 00 	mov	2(r1),	r12	;
+    e242:	1c 51 0e 00 	add	14(r1),	r12	;0x0000e
+    e246:	5d 43       	mov.b	#1,	r13	;r3 As==01
+    e248:	1c 91 02 00 	cmp	2(r1),	r12	;
+    e24c:	01 28       	jnc	$+4      	;abs 0xe250
+    e24e:	4d 43       	clr.b	r13		;
+
+0000e250 <.L6>:
+    e250:	1f 41 04 00 	mov	4(r1),	r15	;
+    e254:	1f 51 10 00 	add	16(r1),	r15	;0x00010
+    e258:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    e25a:	1f 91 04 00 	cmp	4(r1),	r15	;
+    e25e:	01 28       	jnc	$+4      	;abs 0xe262
+    e260:	4e 43       	clr.b	r14		;
+
+0000e262 <.L7>:
+    e262:	0d 5f       	add	r15,	r13	;
+    e264:	57 43       	mov.b	#1,	r7	;r3 As==01
+    e266:	0d 9f       	cmp	r15,	r13	;
+    e268:	01 28       	jnc	$+4      	;abs 0xe26c
+    e26a:	47 43       	clr.b	r7		;
+
+0000e26c <.L8>:
+    e26c:	0e d7       	bis	r7,	r14	;
+    e26e:	17 41 06 00 	mov	6(r1),	r7	;
+    e272:	17 51 12 00 	add	18(r1),	r7	;0x00012
+    e276:	56 43       	mov.b	#1,	r6	;r3 As==01
+    e278:	17 91 06 00 	cmp	6(r1),	r7	;
+    e27c:	01 28       	jnc	$+4      	;abs 0xe280
+    e27e:	46 43       	clr.b	r6		;
+
+0000e280 <.L9>:
+    e280:	0e 57       	add	r7,	r14	;
+    e282:	5f 43       	mov.b	#1,	r15	;r3 As==01
+    e284:	0e 97       	cmp	r7,	r14	;
+    e286:	01 28       	jnc	$+4      	;abs 0xe28a
+    e288:	4f 43       	clr.b	r15		;
+
+0000e28a <.L10>:
+    e28a:	06 df       	bis	r15,	r6	;
+    e28c:	1f 41 0c 00 	mov	12(r1),	r15	;0x0000c
+    e290:	1f 51 14 00 	add	20(r1),	r15	;0x00014
+
+0000e294 <.Loc.49.1>:
+    return result;
+}
+    e294:	0f 56       	add	r6,	r15	;
+    e296:	31 50 18 00 	add	#24,	r1	;#0x0018
+
+0000e29a <.LCFI10>:
+    e29a:	30 40 98 e8 	br	#0xe898		;
+
+0000e29e <transpose>:
+
+unsigned long long transpose(unsigned long long a) {
+    e29e:	0a 12       	push	r10		;
+
+0000e2a0 <.LCFI12>:
+    e2a0:	09 12       	push	r9		;
+
+0000e2a2 <.LCFI13>:
+    e2a2:	08 12       	push	r8		;
+
+0000e2a4 <.LCFI14>:
+    e2a4:	07 12       	push	r7		;
+
+0000e2a6 <.LCFI15>:
+    e2a6:	06 12       	push	r6		;
+
+0000e2a8 <.LCFI16>:
+    e2a8:	05 12       	push	r5		;
+
+0000e2aa <.LCFI17>:
+    e2aa:	04 12       	push	r4		;
+
+0000e2ac <.LCFI18>:
+    e2ac:	31 80 12 00 	sub	#18,	r1	;#0x0012
+
+0000e2b0 <.LCFI19>:
+    e2b0:	08 4c       	mov	r12,	r8	;
+    e2b2:	07 4f       	mov	r15,	r7	;
+
+0000e2b4 <.Loc.52.1>:
+  unsigned r1, r2, r3, r4, r5, r6, r7, r8;
+  unsigned long long c, d;
+  unsigned i;
+
+  r1 = (a >> 56);
+    e2b4:	09 4d       	mov	r13,	r9	;
+    e2b6:	0a 4e       	mov	r14,	r10	;
+    e2b8:	0b 4f       	mov	r15,	r11	;
+    e2ba:	7c 40 38 00 	mov.b	#56,	r12	;#0x0038
+
+0000e2be <.LVL18>:
+    e2be:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+    e2c2:	81 4c 00 00 	mov	r12,	0(r1)	;
+
+0000e2c6 <.LVL20>:
+  r2 = (a >> 48) & 0xff;
+    e2c6:	0b 47       	mov	r7,	r11	;
+    e2c8:	7c 40 30 00 	mov.b	#48,	r12	;#0x0030
+
+0000e2cc <.LVL21>:
+    e2cc:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e2d0 <.Loc.57.1>:
+    e2d0:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    e2d4:	81 4c 02 00 	mov	r12,	2(r1)	;
+
+0000e2d8 <.LVL23>:
+  r3 = (a >> 40) & 0xff;
+    e2d8:	0b 47       	mov	r7,	r11	;
+    e2da:	7c 40 28 00 	mov.b	#40,	r12	;#0x0028
+
+0000e2de <.LVL24>:
+    e2de:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e2e2 <.Loc.58.1>:
+    e2e2:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    e2e6:	81 4c 04 00 	mov	r12,	4(r1)	;
+
+0000e2ea <.LVL26>:
+  r4 = (a >> 32) & 0xff;
+    e2ea:	0b 47       	mov	r7,	r11	;
+    e2ec:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+
+0000e2f0 <.LVL27>:
+    e2f0:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e2f4 <.Loc.59.1>:
+    e2f4:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    e2f8:	81 4c 06 00 	mov	r12,	6(r1)	;
+
+0000e2fc <.LVL29>:
+  r5 = (a >> 24) & 0xff;
+    e2fc:	0b 47       	mov	r7,	r11	;
+    e2fe:	7c 40 18 00 	mov.b	#24,	r12	;#0x0018
+
+0000e302 <.LVL30>:
+    e302:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e306 <.Loc.60.1>:
+    e306:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    e30a:	81 4c 08 00 	mov	r12,	8(r1)	;
+
+0000e30e <.LVL32>:
+  r6 = (a >> 16) & 0xff;
+    e30e:	0b 47       	mov	r7,	r11	;
+    e310:	7c 40 10 00 	mov.b	#16,	r12	;#0x0010
+
+0000e314 <.LVL33>:
+    e314:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e318 <.Loc.61.1>:
+    e318:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    e31c:	81 4c 0a 00 	mov	r12,	10(r1)	; 0x000a
+
+0000e320 <.LVL35>:
+  r7 = (a >>  8) & 0xff;
+    e320:	0b 47       	mov	r7,	r11	;
+    e322:	7c 42       	mov.b	#8,	r12	;r2 As==11
+
+0000e324 <.LVL36>:
+    e324:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e328 <.Loc.62.1>:
+    e328:	44 4c       	mov.b	r12,	r4	;
+
+0000e32a <.Loc.63.1>:
+  r8 = (a      ) & 0xff;
+    e32a:	78 f0 ff 00 	and.b	#255,	r8	;#0x00ff
+    e32e:	81 48 0c 00 	mov	r8,	12(r1)	; 0x000c
+
+0000e332 <.LVL39>:
+    e332:	b1 42 0e 00 	mov	#8,	14(r1)	;r2 As==11, 0x000e
+
+0000e336 <.Loc.65.1>:
+
+  c = 0;
+    e336:	48 43       	clr.b	r8		;
+
+0000e338 <.LVL40>:
+    e338:	49 43       	clr.b	r9		;
+    e33a:	4a 43       	clr.b	r10		;
+    e33c:	4b 43       	clr.b	r11		;
+
+0000e33e <.L17>:
+      | ((r5 & 1) << 3)
+      | ((r6 & 1) << 2)
+      | ((r7 & 1) << 1)
+      | ((r8 & 1));
+      
+    c = (d << 56) + (c >> 8);
+    e33e:	7c 42       	mov.b	#8,	r12	;r2 As==11
+    e340:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e344 <.LVL42>:
+    e344:	05 4c       	mov	r12,	r5	;
+    e346:	06 4d       	mov	r13,	r6	;
+    e348:	07 4e       	mov	r14,	r7	;
+    e34a:	81 4f 10 00 	mov	r15,	16(r1)	; 0x0010
+
+0000e34e <.Loc.68.1>:
+    d = ((r1 & 1) << 7)
+    e34e:	2c 41       	mov	@r1,	r12	;
+    e350:	0c 5c       	rla	r12		;
+    e352:	0c 5c       	rla	r12		;
+    e354:	0c 5c       	rla	r12		;
+    e356:	0c 5c       	rla	r12		;
+    e358:	0c 5c       	rla	r12		;
+    e35a:	0c 5c       	rla	r12		;
+    e35c:	0c 5c       	rla	r12		;
+    e35e:	7c f0 ff 00 	and.b	#255,	r12	;#0x00ff
+
+0000e362 <.Loc.69.1>:
+      | ((r2 & 1) << 6)
+    e362:	18 41 02 00 	mov	2(r1),	r8	;
+    e366:	08 58       	rla	r8		;
+    e368:	08 58       	rla	r8		;
+    e36a:	08 58       	rla	r8		;
+    e36c:	08 58       	rla	r8		;
+    e36e:	08 58       	rla	r8		;
+    e370:	08 58       	rla	r8		;
+    e372:	78 f0 40 00 	and.b	#64,	r8	;#0x0040
+
+0000e376 <.Loc.69.1>:
+    e376:	0c d8       	bis	r8,	r12	;
+
+0000e378 <.LVL43>:
+      | ((r8 & 1));
+    e378:	18 41 0c 00 	mov	12(r1),	r8	;0x0000c
+    e37c:	58 f3       	and.b	#1,	r8	;r3 As==01
+
+0000e37e <.LVL44>:
+    e37e:	0c d8       	bis	r8,	r12	;
+
+0000e380 <.LVL45>:
+      | ((r3 & 1) << 5)
+    e380:	18 41 04 00 	mov	4(r1),	r8	;
+
+0000e384 <.LVL46>:
+    e384:	08 58       	rla	r8		;
+    e386:	08 58       	rla	r8		;
+    e388:	08 58       	rla	r8		;
+    e38a:	08 58       	rla	r8		;
+    e38c:	08 58       	rla	r8		;
+
+0000e38e <.LVL47>:
+    e38e:	78 f0 20 00 	and.b	#32,	r8	;#0x0020
+
+0000e392 <.LVL48>:
+      | ((r8 & 1));
+    e392:	0c d8       	bis	r8,	r12	;
+
+0000e394 <.Loc.71.1>:
+      | ((r4 & 1) << 4)
+    e394:	18 41 06 00 	mov	6(r1),	r8	;
+    e398:	08 58       	rla	r8		;
+    e39a:	08 58       	rla	r8		;
+    e39c:	08 58       	rla	r8		;
+    e39e:	08 58       	rla	r8		;
+
+0000e3a0 <.LVL49>:
+    e3a0:	78 f0 10 00 	and.b	#16,	r8	;#0x0010
+
+0000e3a4 <.LVL50>:
+      | ((r8 & 1));
+    e3a4:	0c d8       	bis	r8,	r12	;
+
+0000e3a6 <.Loc.72.1>:
+      | ((r5 & 1) << 3)
+    e3a6:	18 41 08 00 	mov	8(r1),	r8	;
+    e3aa:	08 58       	rla	r8		;
+    e3ac:	08 58       	rla	r8		;
+    e3ae:	08 58       	rla	r8		;
+    e3b0:	78 f2       	and.b	#8,	r8	;r2 As==11
+
+0000e3b2 <.Loc.75.1>:
+      | ((r8 & 1));
+    e3b2:	0c d8       	bis	r8,	r12	;
+
+0000e3b4 <.Loc.73.1>:
+      | ((r6 & 1) << 2)
+    e3b4:	18 41 0a 00 	mov	10(r1),	r8	;0x0000a
+    e3b8:	08 58       	rla	r8		;
+    e3ba:	08 58       	rla	r8		;
+    e3bc:	68 f2       	and.b	#4,	r8	;r2 As==10
+
+0000e3be <.Loc.75.1>:
+      | ((r8 & 1));
+    e3be:	0c d8       	bis	r8,	r12	;
+
+0000e3c0 <.Loc.74.1>:
+      | ((r7 & 1) << 1)
+    e3c0:	08 44       	mov	r4,	r8	;
+    e3c2:	08 58       	rla	r8		;
+    e3c4:	68 f3       	and.b	#2,	r8	;r3 As==10
+
+0000e3c6 <.LVL51>:
+    c = (d << 56) + (c >> 8);
+    e3c6:	08 dc       	bis	r12,	r8	;
+
+0000e3c8 <.LVL52>:
+    e3c8:	49 43       	clr.b	r9		;
+    e3ca:	4a 43       	clr.b	r10		;
+    e3cc:	4b 43       	clr.b	r11		;
+    e3ce:	7c 40 38 00 	mov.b	#56,	r12	;#0x0038
+    e3d2:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e3d6 <.Loc.77.1>:
+    e3d6:	05 5c       	add	r12,	r5	;
+    e3d8:	59 43       	mov.b	#1,	r9	;r3 As==01
+    e3da:	05 9c       	cmp	r12,	r5	;
+    e3dc:	01 28       	jnc	$+4      	;abs 0xe3e0
+    e3de:	49 43       	clr.b	r9		;
+
+0000e3e0 <.L12>:
+    e3e0:	06 5d       	add	r13,	r6	;
+    e3e2:	5a 43       	mov.b	#1,	r10	;r3 As==01
+    e3e4:	06 9d       	cmp	r13,	r6	;
+    e3e6:	01 28       	jnc	$+4      	;abs 0xe3ea
+    e3e8:	4a 43       	clr.b	r10		;
+
+0000e3ea <.L13>:
+    e3ea:	0c 49       	mov	r9,	r12	;
+    e3ec:	0c 56       	add	r6,	r12	;
+    e3ee:	5d 43       	mov.b	#1,	r13	;r3 As==01
+    e3f0:	0c 96       	cmp	r6,	r12	;
+    e3f2:	01 28       	jnc	$+4      	;abs 0xe3f6
+    e3f4:	4d 43       	clr.b	r13		;
+
+0000e3f6 <.L14>:
+    e3f6:	0a dd       	bis	r13,	r10	;
+    e3f8:	07 5e       	add	r14,	r7	;
+    e3fa:	59 43       	mov.b	#1,	r9	;r3 As==01
+    e3fc:	07 9e       	cmp	r14,	r7	;
+    e3fe:	01 28       	jnc	$+4      	;abs 0xe402
+    e400:	49 43       	clr.b	r9		;
+
+0000e402 <.L15>:
+    e402:	06 4a       	mov	r10,	r6	;
+    e404:	06 57       	add	r7,	r6	;
+    e406:	5d 43       	mov.b	#1,	r13	;r3 As==01
+    e408:	06 97       	cmp	r7,	r6	;
+    e40a:	01 28       	jnc	$+4      	;abs 0xe40e
+    e40c:	4d 43       	clr.b	r13		;
+
+0000e40e <.L16>:
+    e40e:	09 dd       	bis	r13,	r9	;
+    e410:	1f 51 10 00 	add	16(r1),	r15	;0x00010
+    e414:	0f 59       	add	r9,	r15	;
+    e416:	08 45       	mov	r5,	r8	;
+    e418:	09 4c       	mov	r12,	r9	;
+    e41a:	0a 46       	mov	r6,	r10	;
+    e41c:	0b 4f       	mov	r15,	r11	;
+
+0000e41e <.LVL54>:
+
+    r1 = r1 >> 1;
+    e41e:	12 c3       	clrc			
+    e420:	21 10       	rrc	@r1		;
+
+0000e422 <.LVL55>:
+    r2 = r2 >> 1;
+    e422:	12 c3       	clrc			
+    e424:	11 10 02 00 	rrc	2(r1)		;
+
+0000e428 <.Loc.81.1>:
+    r3 = r3 >> 1;
+    e428:	12 c3       	clrc			
+    e42a:	11 10 04 00 	rrc	4(r1)		;
+
+0000e42e <.Loc.82.1>:
+    r4 = r4 >> 1;
+    e42e:	12 c3       	clrc			
+    e430:	11 10 06 00 	rrc	6(r1)		;
+
+0000e434 <.Loc.83.1>:
+    r5 = r5 >> 1;
+    e434:	12 c3       	clrc			
+    e436:	11 10 08 00 	rrc	8(r1)		;
+
+0000e43a <.Loc.84.1>:
+    r6 = r6 >> 1;
+    e43a:	12 c3       	clrc			
+    e43c:	11 10 0a 00 	rrc	10(r1)		;0000a
+
+0000e440 <.Loc.85.1>:
+    r7 = r7 >> 1;
+    e440:	12 c3       	clrc			
+    e442:	04 10       	rrc	r4		;
+
+0000e444 <.Loc.86.1>:
+    r8 = r8 >> 1;
+    e444:	12 c3       	clrc			
+    e446:	11 10 0c 00 	rrc	12(r1)		;0000c
+
+0000e44a <.LVL62>:
+  for (i = 0; i<8; i++) {
+    e44a:	b1 53 0e 00 	add	#-1,	14(r1)	;r3 As==11, 0x000e
+
+0000e44e <.LVL63>:
+    e44e:	81 93 0e 00 	cmp	#0,	14(r1)	;r3 As==00, 0x000e
+    e452:	75 23       	jnz	$-276    	;abs 0xe33e
+
+0000e454 <.LVL64>:
+    e454:	0d 4c       	mov	r12,	r13	;
+
+0000e456 <.Loc.90.1>:
+
+  }
+
+  return c;
+}
+    e456:	0c 45       	mov	r5,	r12	;
+    e458:	0e 46       	mov	r6,	r14	;
+    e45a:	31 50 12 00 	add	#18,	r1	;#0x0012
+
+0000e45e <.LCFI20>:
+    e45e:	30 40 98 e8 	br	#0xe898		;
+
+0000e462 <hwtranspose>:
+
+unsigned long long hwtranspose(unsigned long long a) {
+    e462:	0a 12       	push	r10		;
+
+0000e464 <.LCFI22>:
+    e464:	09 12       	push	r9		;
+
+0000e466 <.LCFI23>:
+    e466:	08 12       	push	r8		;
+
+0000e468 <.LCFI24>:
+    e468:	07 12       	push	r7		;
+
+0000e46a <.LCFI25>:
+    e46a:	06 12       	push	r6		;
+
+0000e46c <.LCFI26>:
+    e46c:	05 12       	push	r5		;
+
+0000e46e <.LCFI27>:
+    e46e:	04 12       	push	r4		;
+
+0000e470 <.LCFI28>:
+    e470:	31 80 06 00 	sub	#6,	r1	;
+
+0000e474 <.LCFI29>:
+    e474:	08 4c       	mov	r12,	r8	;
+    e476:	07 4f       	mov	r15,	r7	;
+
+0000e478 <.LVL67>:
+  
+  unsigned long long result = 0;
+  unsigned long long temp;
+  
+  REG3 = a;
+    e478:	82 4c 14 01 	mov	r12,	&0x0114	;
+
+0000e47c <.Loc.99.1>:
+  REG4 = a>>16;
+    e47c:	09 4d       	mov	r13,	r9	;
+    e47e:	0a 4e       	mov	r14,	r10	;
+    e480:	0b 4f       	mov	r15,	r11	;
+    e482:	7c 40 10 00 	mov.b	#16,	r12	;#0x0010
+
+0000e486 <.LVL68>:
+    e486:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e48a <.Loc.99.1>:
+    e48a:	82 4c 16 01 	mov	r12,	&0x0116	;
+
+0000e48e <.Loc.100.1>:
+  REG5 = a>>32;
+    e48e:	0b 47       	mov	r7,	r11	;
+    e490:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e494:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e498 <.Loc.100.1>:
+    e498:	82 4c 18 01 	mov	r12,	&0x0118	;
+
+0000e49c <.Loc.101.1>:
+  REG6 = a>>48;
+    e49c:	0b 47       	mov	r7,	r11	;
+    e49e:	7c 40 30 00 	mov.b	#48,	r12	;#0x0030
+    e4a2:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e4a6 <.Loc.101.1>:
+    e4a6:	82 4c 1a 01 	mov	r12,	&0x011a	;
+
+0000e4aa <.Loc.102.1>:
+  REG1 = 0x0001;
+    e4aa:	92 43 10 01 	mov	#1,	&0x0110	;r3 As==01
+
+0000e4ae <.L20>:
+  
+  while(1){
+    if(REG1 == 0x0100){
+    e4ae:	1c 42 10 01 	mov	&0x0110,r12	;0x0110
+
+0000e4b2 <.Loc.105.1>:
+    e4b2:	3c 90 00 01 	cmp	#256,	r12	;#0x0100
+    e4b6:	fb 23       	jnz	$-8      	;abs 0xe4ae
+
+0000e4b8 <.Loc.106.1>:
+      temp = REG6;
+    e4b8:	18 42 1a 01 	mov	&0x011a,r8	;0x011a
+
+0000e4bc <.LVL72>:
+      result = result | temp<<48;
+      temp = REG5;
+    e4bc:	15 42 18 01 	mov	&0x0118,r5	;0x0118
+
+0000e4c0 <.LVL73>:
+      result = result | temp<<32;
+      temp = REG4;
+    e4c0:	14 42 16 01 	mov	&0x0116,r4	;0x0116
+
+0000e4c4 <.LVL74>:
+      result = result | temp<<16;
+      result = result | REG3;
+    e4c4:	91 42 14 01 	mov	&0x0114,2(r1)	;0x0114
+    e4c8:	02 00 
+
+0000e4ca <.Loc.107.1>:
+      result = result | temp<<48;
+    e4ca:	49 43       	clr.b	r9		;
+    e4cc:	4a 43       	clr.b	r10		;
+    e4ce:	4b 43       	clr.b	r11		;
+    e4d0:	7c 40 30 00 	mov.b	#48,	r12	;#0x0030
+    e4d4:	b0 12 1c e9 	call	#-5860		;#0xe91c
+    e4d8:	07 4c       	mov	r12,	r7	;
+    e4da:	06 4d       	mov	r13,	r6	;
+    e4dc:	81 4e 04 00 	mov	r14,	4(r1)	;
+    e4e0:	81 4f 00 00 	mov	r15,	0(r1)	;
+
+0000e4e4 <.Loc.109.1>:
+      result = result | temp<<32;
+    e4e4:	08 45       	mov	r5,	r8	;
+
+0000e4e6 <.LVL76>:
+    e4e6:	4b 43       	clr.b	r11		;
+    e4e8:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e4ec:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e4f0 <.Loc.109.1>:
+    e4f0:	07 dc       	bis	r12,	r7	;
+    e4f2:	06 dd       	bis	r13,	r6	;
+    e4f4:	15 41 04 00 	mov	4(r1),	r5	;
+    e4f8:	05 de       	bis	r14,	r5	;
+    e4fa:	2f d1       	bis	@r1,	r15	;
+    e4fc:	81 4f 00 00 	mov	r15,	0(r1)	;
+    e500:	17 d1 02 00 	bis	2(r1),	r7	;
+
+0000e504 <.Loc.111.1>:
+      result = result | temp<<16;
+    e504:	08 44       	mov	r4,	r8	;
+    e506:	4b 43       	clr.b	r11		;
+    e508:	7c 40 10 00 	mov.b	#16,	r12	;#0x0010
+    e50c:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e510 <.Loc.117.1>:
+      return result;
+    }
+  }
+  
+}
+    e510:	0c d7       	bis	r7,	r12	;
+    e512:	0d d6       	bis	r6,	r13	;
+    e514:	0e d5       	bis	r5,	r14	;
+    e516:	2f d1       	bis	@r1,	r15	;
+    e518:	31 50 06 00 	add	#6,	r1	;
+
+0000e51c <.LCFI30>:
+    e51c:	bd 3d       	jmp	$+892    	;abs 0xe898
+
+0000e51e <main>:
+  
+int main(void) {
+    e51e:	0a 12       	push	r10		;
+
+0000e520 <.LCFI32>:
+    e520:	09 12       	push	r9		;
+
+0000e522 <.LCFI33>:
+    e522:	08 12       	push	r8		;
+
+0000e524 <.LCFI34>:
+    e524:	07 12       	push	r7		;
+
+0000e526 <.LCFI35>:
+    e526:	06 12       	push	r6		;
+
+0000e528 <.LCFI36>:
+    e528:	05 12       	push	r5		;
+
+0000e52a <.LCFI37>:
+    e52a:	04 12       	push	r4		;
+
+0000e52c <.LCFI38>:
+    e52c:	31 80 26 00 	sub	#38,	r1	;#0x0026
+
+0000e530 <.LCFI39>:
+  //unsigned long long sw_time;
+  unsigned long long hw_time;
+  //unsigned long long sw_check;
+  unsigned long long hw_check;
+  
+  WDTCTL = WDTPW | WDTHOLD;  // Disable watchdog timer
+    e530:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    e534:	20 01 
+
+0000e536 <.Loc.127.1>:
+  TACTL  |= (TASSEL1 | MC1 | TACLR); // Configure timer
+    e536:	b2 d0 24 02 	bis	#548,	&0x0160	;#0x0224
+    e53a:	60 01 
+
+0000e53c <.Loc.129.1>:
+
+  uartinit();
+    e53c:	b0 12 70 e8 	call	#-6032		;#0xe870
+
+0000e540 <.LVL81>:
+
+  putchar('>');
+    e540:	7c 40 3e 00 	mov.b	#62,	r12	;#0x003e
+    e544:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e548 <.LVL82>:
+    e548:	b1 40 10 00 	mov	#16,	16(r1)	;#0x0010, 0x0010
+    e54c:	10 00 
+    e54e:	b1 40 f0 e0 	mov	#-7952,	4(r1)	;#0xe0f0
+    e552:	04 00 
+    e554:	b1 40 d0 c0 	mov	#-16176,6(r1)	;#0xc0d0
+    e558:	06 00 
+    e55a:	b1 40 b0 a0 	mov	#-24400,8(r1)	;#0xa0b0
+    e55e:	08 00 
+    e560:	b1 40 90 80 	mov	#-32624,30(r1)	;#0x8090, 0x001e
+    e564:	1e 00 
+    e566:	b1 40 07 06 	mov	#1543,	10(r1)	;#0x0607, 0x000a
+    e56a:	0a 00 
+    e56c:	b1 40 05 04 	mov	#1029,	12(r1)	;#0x0405, 0x000c
+    e570:	0c 00 
+    e572:	b1 40 03 02 	mov	#515,	14(r1)	;#0x0203, 0x000e
+    e576:	0e 00 
+    e578:	54 43       	mov.b	#1,	r4	;r3 As==01
+
+0000e57a <.Loc.144.1>:
+    sw_time += TimerLap();
+    putchar('*');
+  }
+*/
+  prngseed();
+  hw_check = 0;
+    e57a:	81 43 12 00 	mov	#0,	18(r1)	;r3 As==00, 0x0012
+    e57e:	81 43 14 00 	mov	#0,	20(r1)	;r3 As==00, 0x0014
+    e582:	81 43 16 00 	mov	#0,	22(r1)	;r3 As==00, 0x0016
+    e586:	81 43 22 00 	mov	#0,	34(r1)	;r3 As==00, 0x0022
+
+0000e58a <.Loc.145.1>:
+  hw_time  = 0;
+    e58a:	81 43 18 00 	mov	#0,	24(r1)	;r3 As==00, 0x0018
+    e58e:	81 43 1a 00 	mov	#0,	26(r1)	;r3 As==00, 0x001a
+    e592:	81 43 1c 00 	mov	#0,	28(r1)	;r3 As==00, 0x001c
+    e596:	81 43 20 00 	mov	#0,	32(r1)	;r3 As==00, 0x0020
+
+0000e59a <.LBB10>:
+    unsigned long long result = s0 + s1;
+    e59a:	81 44 02 00 	mov	r4,	2(r1)	;
+    e59e:	18 3c       	jmp	$+50     	;abs 0xe5d0
+
+0000e5a0 <.L40>:
+    e5a0:	91 42 18 02 	mov	&0x0218,10(r1)	;0x0218, 0x000a
+    e5a4:	0a 00 
+    e5a6:	91 42 1a 02 	mov	&0x021a,12(r1)	;0x021a, 0x000c
+    e5aa:	0c 00 
+    e5ac:	91 42 1c 02 	mov	&0x021c,14(r1)	;0x021c, 0x000e
+    e5b0:	0e 00 
+    e5b2:	91 42 1e 02 	mov	&0x021e,2(r1)	;0x021e
+    e5b6:	02 00 
+    e5b8:	91 42 10 02 	mov	&0x0210,4(r1)	;0x0210
+    e5bc:	04 00 
+    e5be:	91 42 12 02 	mov	&0x0212,6(r1)	;0x0212
+    e5c2:	06 00 
+    e5c4:	91 42 14 02 	mov	&0x0214,8(r1)	;0x0214
+    e5c8:	08 00 
+    e5ca:	91 42 16 02 	mov	&0x0216,30(r1)	;0x0216, 0x001e
+    e5ce:	1e 00 
+
+0000e5d0 <.L39>:
+  TACTL &= ~(MC1 | MC0);
+    e5d0:	b2 f0 cf ff 	and	#-49,	&0x0160	;#0xffcf
+    e5d4:	60 01 
+
+0000e5d6 <.Loc.28.1>:
+  lap = TAR - count;
+    e5d6:	1c 42 70 01 	mov	&0x0170,r12	;0x0170
+
+0000e5da <.Loc.29.1>:
+  count = TAR;
+    e5da:	92 42 70 01 	mov	&0x0170,&0x0220	;0x0170
+    e5de:	20 02 
+
+0000e5e0 <.Loc.30.1>:
+  TACTL |= MC1;
+    e5e0:	b2 d0 20 00 	bis	#32,	&0x0160	;#0x0020
+    e5e4:	60 01 
+
+0000e5e6 <.LBB15>:
+    s1 ^= s0;
+    e5e6:	1c 41 04 00 	mov	4(r1),	r12	;
+    e5ea:	1c e1 0a 00 	xor	10(r1),	r12	;0x0000a
+    e5ee:	81 4c 00 00 	mov	r12,	0(r1)	;
+
+0000e5f2 <.Loc.46.1>:
+    s0 = ((s0 << 55) | (s0 >> 9)) ^ s1 ^ (s1 << 14);
+    e5f2:	18 41 0a 00 	mov	10(r1),	r8	;0x0000a
+    e5f6:	19 41 0c 00 	mov	12(r1),	r9	;0x0000c
+    e5fa:	1a 41 0e 00 	mov	14(r1),	r10	;0x0000e
+    e5fe:	1b 41 02 00 	mov	2(r1),	r11	;
+    e602:	7c 40 09 00 	mov.b	#9,	r12	;
+    e606:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+    e60a:	04 4c       	mov	r12,	r4	;
+    e60c:	05 4d       	mov	r13,	r5	;
+    e60e:	06 4e       	mov	r14,	r6	;
+    e610:	07 4f       	mov	r15,	r7	;
+    e612:	1b 41 02 00 	mov	2(r1),	r11	;
+    e616:	7c 40 37 00 	mov.b	#55,	r12	;#0x0037
+    e61a:	b0 12 1c e9 	call	#-5860		;#0xe91c
+    e61e:	0c d4       	bis	r4,	r12	;
+    e620:	0d d5       	bis	r5,	r13	;
+    e622:	06 de       	bis	r14,	r6	;
+    e624:	0f d7       	bis	r7,	r15	;
+
+0000e626 <.Loc.46.1>:
+    e626:	2c e1       	xor	@r1,	r12	;
+    e628:	81 4c 24 00 	mov	r12,	36(r1)	; 0x0024
+    e62c:	19 41 06 00 	mov	6(r1),	r9	;
+    e630:	19 e1 0c 00 	xor	12(r1),	r9	;0x0000c
+    e634:	04 4d       	mov	r13,	r4	;
+    e636:	04 e9       	xor	r9,	r4	;
+    e638:	1a 41 08 00 	mov	8(r1),	r10	;
+    e63c:	1a e1 0e 00 	xor	14(r1),	r10	;0x0000e
+    e640:	06 ea       	xor	r10,	r6	;
+    e642:	17 41 1e 00 	mov	30(r1),	r7	;0x0001e
+    e646:	17 e1 02 00 	xor	2(r1),	r7	;
+    e64a:	05 4f       	mov	r15,	r5	;
+    e64c:	05 e7       	xor	r7,	r5	;
+
+0000e64e <.Loc.46.1>:
+    e64e:	28 41       	mov	@r1,	r8	;
+    e650:	0b 47       	mov	r7,	r11	;
+    e652:	7c 40 0e 00 	mov.b	#14,	r12	;#0x000e
+    e656:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e65a <.Loc.46.1>:
+    e65a:	1c e1 24 00 	xor	36(r1),	r12	;0x00024
+    e65e:	82 4c 18 02 	mov	r12,	&0x0218	;
+    e662:	04 ed       	xor	r13,	r4	;
+    e664:	82 44 1a 02 	mov	r4,	&0x021a	;
+    e668:	06 ee       	xor	r14,	r6	;
+    e66a:	82 46 1c 02 	mov	r6,	&0x021c	;
+    e66e:	05 ef       	xor	r15,	r5	;
+    e670:	82 45 1e 02 	mov	r5,	&0x021e	;
+
+0000e674 <.Loc.47.1>:
+    s1 = (s1 << 36) | (s1 >> 28);
+    e674:	0b 47       	mov	r7,	r11	;
+    e676:	7c 40 1c 00 	mov.b	#28,	r12	;#0x001c
+    e67a:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+    e67e:	81 4c 00 00 	mov	r12,	0(r1)	;
+    e682:	04 4d       	mov	r13,	r4	;
+    e684:	05 4e       	mov	r14,	r5	;
+    e686:	06 4f       	mov	r15,	r6	;
+    e688:	0b 47       	mov	r7,	r11	;
+    e68a:	7c 40 24 00 	mov.b	#36,	r12	;#0x0024
+    e68e:	b0 12 1c e9 	call	#-5860		;#0xe91c
+
+0000e692 <.Loc.47.1>:
+    e692:	2c d1       	bis	@r1,	r12	;
+    e694:	82 4c 10 02 	mov	r12,	&0x0210	;
+    e698:	0d d4       	bis	r4,	r13	;
+    e69a:	82 4d 12 02 	mov	r13,	&0x0212	;
+    e69e:	0e d5       	bis	r5,	r14	;
+    e6a0:	82 4e 14 02 	mov	r14,	&0x0214	;
+    e6a4:	0f d6       	bis	r6,	r15	;
+    e6a6:	82 4f 16 02 	mov	r15,	&0x0216	;
+
+0000e6aa <.Loc.44.1>:
+    unsigned long long result = s0 + s1;
+    e6aa:	1c 41 04 00 	mov	4(r1),	r12	;
+    e6ae:	1c 51 0a 00 	add	10(r1),	r12	;0x0000a
+    e6b2:	5d 43       	mov.b	#1,	r13	;r3 As==01
+    e6b4:	1c 91 04 00 	cmp	4(r1),	r12	;
+    e6b8:	01 28       	jnc	$+4      	;abs 0xe6bc
+    e6ba:	4d 43       	clr.b	r13		;
+
+0000e6bc <.L23>:
+    e6bc:	1f 41 06 00 	mov	6(r1),	r15	;
+    e6c0:	1f 51 0c 00 	add	12(r1),	r15	;0x0000c
+    e6c4:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    e6c6:	1f 91 06 00 	cmp	6(r1),	r15	;
+    e6ca:	01 28       	jnc	$+4      	;abs 0xe6ce
+    e6cc:	4e 43       	clr.b	r14		;
+
+0000e6ce <.L24>:
+    e6ce:	0d 5f       	add	r15,	r13	;
+    e6d0:	5a 43       	mov.b	#1,	r10	;r3 As==01
+    e6d2:	0d 9f       	cmp	r15,	r13	;
+    e6d4:	01 28       	jnc	$+4      	;abs 0xe6d8
+    e6d6:	4a 43       	clr.b	r10		;
+
+0000e6d8 <.L25>:
+    e6d8:	0e da       	bis	r10,	r14	;
+    e6da:	1f 41 08 00 	mov	8(r1),	r15	;
+    e6de:	1f 51 0e 00 	add	14(r1),	r15	;0x0000e
+    e6e2:	5a 43       	mov.b	#1,	r10	;r3 As==01
+    e6e4:	1f 91 08 00 	cmp	8(r1),	r15	;
+    e6e8:	01 28       	jnc	$+4      	;abs 0xe6ec
+    e6ea:	4a 43       	clr.b	r10		;
+
+0000e6ec <.L26>:
+    e6ec:	0e 5f       	add	r15,	r14	;
+    e6ee:	59 43       	mov.b	#1,	r9	;r3 As==01
+    e6f0:	0e 9f       	cmp	r15,	r14	;
+    e6f2:	01 28       	jnc	$+4      	;abs 0xe6f6
+    e6f4:	49 43       	clr.b	r9		;
+
+0000e6f6 <.L27>:
+    e6f6:	0a d9       	bis	r9,	r10	;
+    e6f8:	1f 41 1e 00 	mov	30(r1),	r15	;0x0001e
+    e6fc:	1f 51 02 00 	add	2(r1),	r15	;
+
+0000e700 <.LBE15>:
+  for (i=0; i<16; i++) {
+    TimerLap();
+    hw_check += hwtranspose(prng());
+    e700:	0f 5a       	add	r10,	r15	;
+    e702:	b0 12 62 e4 	call	#-7070		;#0xe462
+
+0000e706 <.LVL92>:
+    e706:	18 41 12 00 	mov	18(r1),	r8	;0x00012
+    e70a:	08 5c       	add	r12,	r8	;
+    e70c:	59 43       	mov.b	#1,	r9	;r3 As==01
+    e70e:	18 91 12 00 	cmp	18(r1),	r8	;0x00012
+    e712:	01 28       	jnc	$+4      	;abs 0xe716
+    e714:	49 43       	clr.b	r9		;
+
+0000e716 <.L28>:
+    e716:	1d 51 14 00 	add	20(r1),	r13	;0x00014
+    e71a:	5a 43       	mov.b	#1,	r10	;r3 As==01
+    e71c:	1d 91 14 00 	cmp	20(r1),	r13	;0x00014
+    e720:	01 28       	jnc	$+4      	;abs 0xe724
+    e722:	4a 43       	clr.b	r10		;
+
+0000e724 <.L29>:
+    e724:	09 5d       	add	r13,	r9	;
+    e726:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    e728:	09 9d       	cmp	r13,	r9	;
+    e72a:	01 28       	jnc	$+4      	;abs 0xe72e
+    e72c:	4c 43       	clr.b	r12		;
+
+0000e72e <.L30>:
+    e72e:	0a dc       	bis	r12,	r10	;
+    e730:	1e 51 16 00 	add	22(r1),	r14	;0x00016
+    e734:	55 43       	mov.b	#1,	r5	;r3 As==01
+    e736:	1e 91 16 00 	cmp	22(r1),	r14	;0x00016
+    e73a:	01 28       	jnc	$+4      	;abs 0xe73e
+    e73c:	45 43       	clr.b	r5		;
+
+0000e73e <.L31>:
+    e73e:	0a 5e       	add	r14,	r10	;
+    e740:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    e742:	0a 9e       	cmp	r14,	r10	;
+    e744:	01 28       	jnc	$+4      	;abs 0xe748
+    e746:	4c 43       	clr.b	r12		;
+
+0000e748 <.L32>:
+    e748:	05 dc       	bis	r12,	r5	;
+    e74a:	1f 51 22 00 	add	34(r1),	r15	;0x00022
+    e74e:	05 5f       	add	r15,	r5	;
+    e750:	81 48 12 00 	mov	r8,	18(r1)	; 0x0012
+
+0000e754 <.LVL93>:
+    e754:	81 49 14 00 	mov	r9,	20(r1)	; 0x0014
+    e758:	81 4a 16 00 	mov	r10,	22(r1)	; 0x0016
+    e75c:	81 45 22 00 	mov	r5,	34(r1)	; 0x0022
+
+0000e760 <.LBB16>:
+  TACTL &= ~(MC1 | MC0);
+    e760:	b2 f0 cf ff 	and	#-49,	&0x0160	;#0xffcf
+    e764:	60 01 
+
+0000e766 <.Loc.28.1>:
+  lap = TAR - count;
+    e766:	16 42 70 01 	mov	&0x0170,r6	;0x0170
+
+0000e76a <.Loc.28.1>:
+    e76a:	16 82 20 02 	sub	&0x0220,r6	;0x0220
+
+0000e76e <.LVL95>:
+  count = TAR;
+    e76e:	92 42 70 01 	mov	&0x0170,&0x0220	;0x0170
+    e772:	20 02 
+
+0000e774 <.Loc.30.1>:
+  TACTL |= MC1;
+    e774:	b2 d0 20 00 	bis	#32,	&0x0160	;#0x0020
+    e778:	60 01 
+
+0000e77a <.LBE16>:
+    hw_time += TimerLap();
+    e77a:	16 51 18 00 	add	24(r1),	r6	;0x00018
+    e77e:	54 43       	mov.b	#1,	r4	;r3 As==01
+    e780:	16 91 18 00 	cmp	24(r1),	r6	;0x00018
+    e784:	01 28       	jnc	$+4      	;abs 0xe788
+    e786:	44 43       	clr.b	r4		;
+
+0000e788 <.L33>:
+    e788:	47 43       	clr.b	r7		;
+    e78a:	14 51 1a 00 	add	26(r1),	r4	;0x0001a
+    e78e:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    e790:	14 91 1a 00 	cmp	26(r1),	r4	;0x0001a
+    e794:	01 28       	jnc	$+4      	;abs 0xe798
+    e796:	4c 43       	clr.b	r12		;
+
+0000e798 <.L35>:
+    e798:	07 dc       	bis	r12,	r7	;
+    e79a:	4c 43       	clr.b	r12		;
+    e79c:	17 51 1c 00 	add	28(r1),	r7	;0x0001c
+    e7a0:	5d 43       	mov.b	#1,	r13	;r3 As==01
+    e7a2:	17 91 1c 00 	cmp	28(r1),	r7	;0x0001c
+    e7a6:	01 28       	jnc	$+4      	;abs 0xe7aa
+    e7a8:	4d 43       	clr.b	r13		;
+
+0000e7aa <.L37>:
+    e7aa:	0c dd       	bis	r13,	r12	;
+    e7ac:	81 46 18 00 	mov	r6,	24(r1)	; 0x0018
+
+0000e7b0 <.LVL97>:
+    e7b0:	81 44 1a 00 	mov	r4,	26(r1)	; 0x001a
+    e7b4:	81 47 1c 00 	mov	r7,	28(r1)	; 0x001c
+    e7b8:	81 5c 20 00 	add	r12,	32(r1)	; 0x0020
+
+0000e7bc <.LVL98>:
+    putchar('#');
+    e7bc:	7c 40 23 00 	mov.b	#35,	r12	;#0x0023
+    e7c0:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e7c4 <.LVL99>:
+  for (i=0; i<16; i++) {
+    e7c4:	b1 53 10 00 	add	#-1,	16(r1)	;r3 As==11, 0x0010
+
+0000e7c8 <.LVL100>:
+    e7c8:	81 93 10 00 	cmp	#0,	16(r1)	;r3 As==00, 0x0010
+    e7cc:	e9 22       	jnz	$-556    	;abs 0xe5a0
+
+0000e7ce <.Loc.163.1>:
+  putchar('T');
+  puthex(sw_time  >> 48);
+  puthex(sw_time  >> 32);
+  puthex(sw_time  >> 16);
+  puthex(sw_time      );*/
+  putchar('H');
+    e7ce:	7c 40 48 00 	mov.b	#72,	r12	;#0x0048
+    e7d2:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e7d6 <.LVL101>:
+  puthex(hw_check >> 48);
+    e7d6:	0b 45       	mov	r5,	r11	;
+    e7d8:	7c 40 30 00 	mov.b	#48,	r12	;#0x0030
+    e7dc:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e7e0 <.Loc.164.1>:
+    e7e0:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e7e4 <.LVL103>:
+  puthex(hw_check >> 32);
+    e7e4:	0b 45       	mov	r5,	r11	;
+    e7e6:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e7ea:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e7ee <.Loc.165.1>:
+    e7ee:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e7f2 <.LVL105>:
+  puthex(hw_check >> 16);
+    e7f2:	0b 45       	mov	r5,	r11	;
+    e7f4:	7c 40 10 00 	mov.b	#16,	r12	;#0x0010
+    e7f8:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e7fc <.Loc.166.1>:
+    e7fc:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e800 <.LVL107>:
+  puthex(hw_check      );
+    e800:	0c 48       	mov	r8,	r12	;
+    e802:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e806 <.LVL108>:
+  putchar('T');
+    e806:	7c 40 54 00 	mov.b	#84,	r12	;#0x0054
+    e80a:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e80e <.LVL109>:
+  puthex(hw_time  >> 48);
+    e80e:	08 46       	mov	r6,	r8	;
+
+0000e810 <.LVL110>:
+    e810:	09 44       	mov	r4,	r9	;
+
+0000e812 <.LVL111>:
+    e812:	0a 47       	mov	r7,	r10	;
+
+0000e814 <.LVL112>:
+    e814:	1b 41 20 00 	mov	32(r1),	r11	;0x00020
+    e818:	7c 40 30 00 	mov.b	#48,	r12	;#0x0030
+    e81c:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e820 <.Loc.169.1>:
+    e820:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e824 <.LVL114>:
+  puthex(hw_time  >> 32);
+    e824:	1b 41 20 00 	mov	32(r1),	r11	;0x00020
+    e828:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e82c:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e830 <.Loc.170.1>:
+    e830:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e834 <.LVL116>:
+  puthex(hw_time  >> 16);
+    e834:	1b 41 20 00 	mov	32(r1),	r11	;0x00020
+    e838:	7c 40 10 00 	mov.b	#16,	r12	;#0x0010
+    e83c:	b0 12 ee e9 	call	#-5650		;#0xe9ee
+
+0000e840 <.Loc.171.1>:
+    e840:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e844 <.LVL118>:
+  puthex(hw_time      );
+    e844:	0c 46       	mov	r6,	r12	;
+    e846:	b0 12 34 e0 	call	#-8140		;#0xe034
+
+0000e84a <.LVL119>:
+
+  putchar('+');
+    e84a:	7c 40 2b 00 	mov.b	#43,	r12	;#0x002b
+    e84e:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e852 <.LVL120>:
+  putchar('+');
+    e852:	7c 40 2b 00 	mov.b	#43,	r12	;#0x002b
+    e856:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e85a <.LVL121>:
+  putchar('+');
+    e85a:	7c 40 2b 00 	mov.b	#43,	r12	;#0x002b
+    e85e:	b0 12 7c e8 	call	#-6020		;#0xe87c
+
+0000e862 <.LVL122>:
+
+  P1OUT  = 0xF0;                    //  Simulation Stopping Command
+    e862:	f2 40 f0 ff 	mov.b	#-16,	&0x0021	;#0xfff0
+    e866:	21 00 
+
+0000e868 <.LVL123>:
+  return 0;
+}
+    e868:	4c 43       	clr.b	r12		;
+    e86a:	31 50 26 00 	add	#38,	r1	;#0x0026
+
+0000e86e <.LCFI40>:
+    e86e:	14 3c       	jmp	$+42     	;abs 0xe898
+
+0000e870 <uartinit>:
+// BAUDRATE = 1M @ 20MHz clock
+// The BAUD divisor is equal to ceil(systemclock/baudrate - 1)
+#define BAUD 1
+
+void uartinit() {
+  UART_BAUD = BAUD;         
+    e870:	92 43 82 00 	mov	#1,	&0x0082	;r3 As==01
+
+0000e874 <.Loc.10.1>:
+  UART_CTL  = UART_EN | UART_IEN_RX;
+    e874:	
+0000e876 <L0^A>:
+    e876:	11 00       	mova	@r0+,	r1	;
+    e878:	
+0000e87a <.Loc.11.1>:
+}
+    e87a:	30 41       	ret			
+
+0000e87c <putchar>:
+
+int putchar (int txdata) {
+  while (UART_STAT & UART_TX_FULL);
+    e87c:	f2 b2 81 00 	bit.b	#8,	&0x0081	;r2 As==11
+    e880:	fd 23       	jnz	$-4      	;abs 0xe87c
+
+0000e882 <.Loc.15.1>:
+  UART_TXD = txdata;
+    e882:	c2 4c 84 00 	mov.b	r12,	&0x0084	;
+
+0000e886 <.Loc.16.1>:
+  return 0;
+}
+    e886:	4c 43       	clr.b	r12		;
+
+0000e888 <.LVL1>:
+    e888:	30 41       	ret			
+
+0000e88a <INT_uart_rx>:
+
+char rxdata;
+
+interrupt (UART_RX_VECTOR) INT_uart_rx(void) {
+  rxdata = UART_RXD;
+    e88a:	d2 42 85 00 	mov.b	&0x0085,&0x0222	;0x0085
+    e88e:	22 02 
+
+0000e890 <.Loc.23.1>:
+  UART_STAT = UART_RX_PND;
+    e890:	f2 40 10 00 	mov.b	#16,	&0x0081	;#0x0010
+    e894:	81 00 
+
+0000e896 <.Loc.24.1>:
+}
+    e896:	00 13       	reti			
+
+0000e898 <__mspabi_func_epilog_7>:
+    e898:	34 41       	pop	r4		;
+
+0000e89a <__mspabi_func_epilog_6>:
+    e89a:	35 41       	pop	r5		;
+
+0000e89c <__mspabi_func_epilog_5>:
+    e89c:	36 41       	pop	r6		;
+
+0000e89e <__mspabi_func_epilog_4>:
+    e89e:	37 41       	pop	r7		;
+
+0000e8a0 <__mspabi_func_epilog_3>:
+    e8a0:	38 41       	pop	r8		;
+
+0000e8a2 <__mspabi_func_epilog_2>:
+    e8a2:	39 41       	pop	r9		;
+
+0000e8a4 <__mspabi_func_epilog_1>:
+    e8a4:	3a 41       	pop	r10		;
+    e8a6:	30 41       	ret			
+
+0000e8a8 <__mspabi_slli_15>:
+    e8a8:	0c 5c       	rla	r12		;
+
+0000e8aa <__mspabi_slli_14>:
+    e8aa:	0c 5c       	rla	r12		;
+
+0000e8ac <__mspabi_slli_13>:
+    e8ac:	0c 5c       	rla	r12		;
+
+0000e8ae <__mspabi_slli_12>:
+    e8ae:	0c 5c       	rla	r12		;
+
+0000e8b0 <__mspabi_slli_11>:
+    e8b0:	0c 5c       	rla	r12		;
+
+0000e8b2 <__mspabi_slli_10>:
+    e8b2:	0c 5c       	rla	r12		;
+
+0000e8b4 <__mspabi_slli_9>:
+    e8b4:	0c 5c       	rla	r12		;
+
+0000e8b6 <__mspabi_slli_8>:
+    e8b6:	0c 5c       	rla	r12		;
+
+0000e8b8 <__mspabi_slli_7>:
+    e8b8:	0c 5c       	rla	r12		;
+
+0000e8ba <__mspabi_slli_6>:
+    e8ba:	0c 5c       	rla	r12		;
+
+0000e8bc <__mspabi_slli_5>:
+    e8bc:	0c 5c       	rla	r12		;
+
+0000e8be <__mspabi_slli_4>:
+    e8be:	0c 5c       	rla	r12		;
+
+0000e8c0 <__mspabi_slli_3>:
+    e8c0:	0c 5c       	rla	r12		;
+
+0000e8c2 <__mspabi_slli_2>:
+    e8c2:	0c 5c       	rla	r12		;
+
+0000e8c4 <__mspabi_slli_1>:
+    e8c4:	0c 5c       	rla	r12		;
+    e8c6:	30 41       	ret			
+
+0000e8c8 <.L1^B1>:
+    e8c8:	3d 53       	add	#-1,	r13	;r3 As==11
+    e8ca:	0c 5c       	rla	r12		;
+
+0000e8cc <__mspabi_slli>:
+    e8cc:	0d 93       	cmp	#0,	r13	;r3 As==00
+    e8ce:	fc 23       	jnz	$-6      	;abs 0xe8c8
+    e8d0:	30 41       	ret			
+
+0000e8d2 <__mspabi_slll_15>:
+    e8d2:	0c 5c       	rla	r12		;
+    e8d4:	0d 6d       	rlc	r13		;
+
+0000e8d6 <__mspabi_slll_14>:
+    e8d6:	0c 5c       	rla	r12		;
+    e8d8:	0d 6d       	rlc	r13		;
+
+0000e8da <__mspabi_slll_13>:
+    e8da:	0c 5c       	rla	r12		;
+    e8dc:	0d 6d       	rlc	r13		;
+
+0000e8de <__mspabi_slll_12>:
+    e8de:	0c 5c       	rla	r12		;
+    e8e0:	0d 6d       	rlc	r13		;
+
+0000e8e2 <__mspabi_slll_11>:
+    e8e2:	0c 5c       	rla	r12		;
+    e8e4:	0d 6d       	rlc	r13		;
+
+0000e8e6 <__mspabi_slll_10>:
+    e8e6:	0c 5c       	rla	r12		;
+    e8e8:	0d 6d       	rlc	r13		;
+
+0000e8ea <__mspabi_slll_9>:
+    e8ea:	0c 5c       	rla	r12		;
+    e8ec:	0d 6d       	rlc	r13		;
+
+0000e8ee <__mspabi_slll_8>:
+    e8ee:	0c 5c       	rla	r12		;
+    e8f0:	0d 6d       	rlc	r13		;
+
+0000e8f2 <__mspabi_slll_7>:
+    e8f2:	0c 5c       	rla	r12		;
+    e8f4:	0d 6d       	rlc	r13		;
+
+0000e8f6 <__mspabi_slll_6>:
+    e8f6:	0c 5c       	rla	r12		;
+    e8f8:	0d 6d       	rlc	r13		;
+
+0000e8fa <__mspabi_slll_5>:
+    e8fa:	0c 5c       	rla	r12		;
+    e8fc:	0d 6d       	rlc	r13		;
+
+0000e8fe <__mspabi_slll_4>:
+    e8fe:	0c 5c       	rla	r12		;
+    e900:	0d 6d       	rlc	r13		;
+
+0000e902 <__mspabi_slll_3>:
+    e902:	0c 5c       	rla	r12		;
+    e904:	0d 6d       	rlc	r13		;
+
+0000e906 <__mspabi_slll_2>:
+    e906:	0c 5c       	rla	r12		;
+    e908:	0d 6d       	rlc	r13		;
+
+0000e90a <__mspabi_slll_1>:
+    e90a:	0c 5c       	rla	r12		;
+    e90c:	0d 6d       	rlc	r13		;
+    e90e:	30 41       	ret			
+
+0000e910 <.L1^B2>:
+    e910:	3e 53       	add	#-1,	r14	;r3 As==11
+    e912:	0c 5c       	rla	r12		;
+    e914:	0d 6d       	rlc	r13		;
+
+0000e916 <__mspabi_slll>:
+    e916:	0e 93       	cmp	#0,	r14	;r3 As==00
+    e918:	fb 23       	jnz	$-8      	;abs 0xe910
+    e91a:	30 41       	ret			
+
+0000e91c <__mspabi_sllll>:
+    e91c:	0f 4b       	mov	r11,	r15	;
+    e91e:	0b 4c       	mov	r12,	r11	;
+    e920:	0e 4a       	mov	r10,	r14	;
+    e922:	0d 49       	mov	r9,	r13	;
+    e924:	0c 48       	mov	r8,	r12	;
+    e926:	0b 93       	cmp	#0,	r11	;r3 As==00
+    e928:	01 20       	jnz	$+4      	;abs 0xe92c
+    e92a:	30 41       	ret			
+
+0000e92c <.L1^B3>:
+    e92c:	0c 5c       	rla	r12		;
+    e92e:	0d 6d       	rlc	r13		;
+    e930:	0e 6e       	rlc	r14		;
+    e932:	0f 6f       	rlc	r15		;
+    e934:	3b 53       	add	#-1,	r11	;r3 As==11
+    e936:	fa 23       	jnz	$-10     	;abs 0xe92c
+    e938:	30 41       	ret			
+
+0000e93a <__mspabi_srli_15>:
+    e93a:	12 c3       	clrc			
+    e93c:	0c 10       	rrc	r12		;
+
+0000e93e <__mspabi_srli_14>:
+    e93e:	12 c3       	clrc			
+    e940:	0c 10       	rrc	r12		;
+
+0000e942 <__mspabi_srli_13>:
+    e942:	12 c3       	clrc			
+    e944:	0c 10       	rrc	r12		;
+
+0000e946 <__mspabi_srli_12>:
+    e946:	12 c3       	clrc			
+    e948:	0c 10       	rrc	r12		;
+
+0000e94a <__mspabi_srli_11>:
+    e94a:	12 c3       	clrc			
+    e94c:	0c 10       	rrc	r12		;
+
+0000e94e <__mspabi_srli_10>:
+    e94e:	12 c3       	clrc			
+    e950:	0c 10       	rrc	r12		;
+
+0000e952 <__mspabi_srli_9>:
+    e952:	12 c3       	clrc			
+    e954:	0c 10       	rrc	r12		;
+
+0000e956 <__mspabi_srli_8>:
+    e956:	12 c3       	clrc			
+    e958:	0c 10       	rrc	r12		;
+
+0000e95a <__mspabi_srli_7>:
+    e95a:	12 c3       	clrc			
+    e95c:	0c 10       	rrc	r12		;
+
+0000e95e <__mspabi_srli_6>:
+    e95e:	12 c3       	clrc			
+    e960:	0c 10       	rrc	r12		;
+
+0000e962 <__mspabi_srli_5>:
+    e962:	12 c3       	clrc			
+    e964:	0c 10       	rrc	r12		;
+
+0000e966 <__mspabi_srli_4>:
+    e966:	12 c3       	clrc			
+    e968:	0c 10       	rrc	r12		;
+
+0000e96a <__mspabi_srli_3>:
+    e96a:	12 c3       	clrc			
+    e96c:	0c 10       	rrc	r12		;
+
+0000e96e <__mspabi_srli_2>:
+    e96e:	12 c3       	clrc			
+    e970:	0c 10       	rrc	r12		;
+
+0000e972 <__mspabi_srli_1>:
+    e972:	12 c3       	clrc			
+    e974:	0c 10       	rrc	r12		;
+    e976:	30 41       	ret			
+
+0000e978 <.L1^B1>:
+    e978:	3d 53       	add	#-1,	r13	;r3 As==11
+    e97a:	12 c3       	clrc			
+    e97c:	0c 10       	rrc	r12		;
+
+0000e97e <__mspabi_srli>:
+    e97e:	0d 93       	cmp	#0,	r13	;r3 As==00
+    e980:	fb 23       	jnz	$-8      	;abs 0xe978
+    e982:	30 41       	ret			
+
+0000e984 <__mspabi_srll_15>:
+    e984:	12 c3       	clrc			
+    e986:	0d 10       	rrc	r13		;
+    e988:	0c 10       	rrc	r12		;
+
+0000e98a <__mspabi_srll_14>:
+    e98a:	12 c3       	clrc			
+    e98c:	0d 10       	rrc	r13		;
+    e98e:	0c 10       	rrc	r12		;
+
+0000e990 <__mspabi_srll_13>:
+    e990:	12 c3       	clrc			
+    e992:	0d 10       	rrc	r13		;
+    e994:	0c 10       	rrc	r12		;
+
+0000e996 <__mspabi_srll_12>:
+    e996:	12 c3       	clrc			
+    e998:	0d 10       	rrc	r13		;
+    e99a:	0c 10       	rrc	r12		;
+
+0000e99c <__mspabi_srll_11>:
+    e99c:	12 c3       	clrc			
+    e99e:	0d 10       	rrc	r13		;
+    e9a0:	0c 10       	rrc	r12		;
+
+0000e9a2 <__mspabi_srll_10>:
+    e9a2:	12 c3       	clrc			
+    e9a4:	0d 10       	rrc	r13		;
+    e9a6:	0c 10       	rrc	r12		;
+
+0000e9a8 <__mspabi_srll_9>:
+    e9a8:	12 c3       	clrc			
+    e9aa:	0d 10       	rrc	r13		;
+    e9ac:	0c 10       	rrc	r12		;
+
+0000e9ae <__mspabi_srll_8>:
+    e9ae:	12 c3       	clrc			
+    e9b0:	0d 10       	rrc	r13		;
+    e9b2:	0c 10       	rrc	r12		;
+
+0000e9b4 <__mspabi_srll_7>:
+    e9b4:	12 c3       	clrc			
+    e9b6:	0d 10       	rrc	r13		;
+    e9b8:	0c 10       	rrc	r12		;
+
+0000e9ba <__mspabi_srll_6>:
+    e9ba:	12 c3       	clrc			
+    e9bc:	0d 10       	rrc	r13		;
+    e9be:	0c 10       	rrc	r12		;
+
+0000e9c0 <__mspabi_srll_5>:
+    e9c0:	12 c3       	clrc			
+    e9c2:	0d 10       	rrc	r13		;
+    e9c4:	0c 10       	rrc	r12		;
+
+0000e9c6 <__mspabi_srll_4>:
+    e9c6:	12 c3       	clrc			
+    e9c8:	0d 10       	rrc	r13		;
+    e9ca:	0c 10       	rrc	r12		;
+
+0000e9cc <__mspabi_srll_3>:
+    e9cc:	12 c3       	clrc			
+    e9ce:	0d 10       	rrc	r13		;
+    e9d0:	0c 10       	rrc	r12		;
+
+0000e9d2 <__mspabi_srll_2>:
+    e9d2:	12 c3       	clrc			
+    e9d4:	0d 10       	rrc	r13		;
+    e9d6:	0c 10       	rrc	r12		;
+
+0000e9d8 <__mspabi_srll_1>:
+    e9d8:	12 c3       	clrc			
+    e9da:	0d 10       	rrc	r13		;
+    e9dc:	0c 10       	rrc	r12		;
+    e9de:	30 41       	ret			
+
+0000e9e0 <.L1^B2>:
+    e9e0:	3e 53       	add	#-1,	r14	;r3 As==11
+    e9e2:	12 c3       	clrc			
+    e9e4:	0d 10       	rrc	r13		;
+    e9e6:	0c 10       	rrc	r12		;
+
+0000e9e8 <__mspabi_srll>:
+    e9e8:	0e 93       	cmp	#0,	r14	;r3 As==00
+    e9ea:	fa 23       	jnz	$-10     	;abs 0xe9e0
+    e9ec:	30 41       	ret			
+
+0000e9ee <__mspabi_srlll>:
+    e9ee:	0f 4b       	mov	r11,	r15	;
+    e9f0:	0b 4c       	mov	r12,	r11	;
+    e9f2:	0e 4a       	mov	r10,	r14	;
+    e9f4:	0d 49       	mov	r9,	r13	;
+    e9f6:	0c 48       	mov	r8,	r12	;
+    e9f8:	0b 93       	cmp	#0,	r11	;r3 As==00
+    e9fa:	01 20       	jnz	$+4      	;abs 0xe9fe
+    e9fc:	30 41       	ret			
+
+0000e9fe <.L1^B3>:
+    e9fe:	12 c3       	clrc			
+    ea00:	0f 10       	rrc	r15		;
+    ea02:	0e 10       	rrc	r14		;
+    ea04:	0d 10       	rrc	r13		;
+    ea06:	0c 10       	rrc	r12		;
+    ea08:	3b 53       	add	#-1,	r11	;r3 As==11
+    ea0a:	f9 23       	jnz	$-12     	;abs 0xe9fe
+    ea0c:	30 41       	ret			
+
+0000ea0e <_exit>:
+    ea0e:	ff 3f       	jmp	$+0      	;abs 0xea0e
+
+0000ea10 <memmove>:
+    ea10:	0a 12       	push	r10		;
+
+0000ea12 <L0^A>:
+    ea12:	09 12       	push	r9		;
+
+0000ea14 <.LCFI1>:
+    ea14:	0f 4d       	mov	r13,	r15	;
+    ea16:	0f 5e       	add	r14,	r15	;
+
+0000ea18 <.Loc.69.1>:
+    ea18:	0d 9c       	cmp	r12,	r13	;
+    ea1a:	02 2c       	jc	$+6      	;abs 0xea20
+
+0000ea1c <.Loc.69.1>:
+    ea1c:	0c 9f       	cmp	r15,	r12	;
+    ea1e:	07 28       	jnc	$+16     	;abs 0xea2e
+
+0000ea20 <.L2>:
+    ea20:	0e 4c       	mov	r12,	r14	;
+
+0000ea22 <.L4>:
+    ea22:	0d 9f       	cmp	r15,	r13	;
+    ea24:	0a 24       	jz	$+22     	;abs 0xea3a
+
+0000ea26 <.LVL3>:
+    ea26:	fe 4d 00 00 	mov.b	@r13+,	0(r14)	;
+
+0000ea2a <.LVL4>:
+    ea2a:	1e 53       	inc	r14		;
+    ea2c:	fa 3f       	jmp	$-10     	;abs 0xea22
+
+0000ea2e <.L3>:
+    ea2e:	09 4e       	mov	r14,	r9	;
+    ea30:	39 e3       	inv	r9		;
+
+0000ea32 <.Loc.74.1>:
+    ea32:	4d 43       	clr.b	r13		;
+
+0000ea34 <.L5>:
+    ea34:	3d 53       	add	#-1,	r13	;r3 As==11
+
+0000ea36 <.LVL7>:
+    ea36:	09 9d       	cmp	r13,	r9	;
+    ea38:	01 20       	jnz	$+4      	;abs 0xea3c
+
+0000ea3a <.L9>:
+    ea3a:	33 3f       	jmp	$-408    	;abs 0xe8a2
+
+0000ea3c <.L6>:
+    ea3c:	0b 4e       	mov	r14,	r11	;
+    ea3e:	0b 5d       	add	r13,	r11	;
+    ea40:	0b 5c       	add	r12,	r11	;
+    ea42:	0a 4f       	mov	r15,	r10	;
+    ea44:	0a 5d       	add	r13,	r10	;
+
+0000ea46 <.LVL10>:
+    ea46:	eb 4a 00 00 	mov.b	@r10,	0(r11)	;
+    ea4a:	f4 3f       	jmp	$-22     	;abs 0xea34
+
+0000ea4c <memset>:
+    ea4c:	0e 5c       	add	r12,	r14	;
+
+0000ea4e <.LVL2>:
+    ea4e:	0f 4c       	mov	r12,	r15	;
+
+0000ea50 <.L2>:
+    ea50:	0f 9e       	cmp	r14,	r15	;
+
+0000ea52 <L0^A>:
+    ea52:	01 20       	jnz	$+4      	;abs 0xea56
+
+0000ea54 <.Loc.104.1>:
+    ea54:	30 41       	ret			
+
+0000ea56 <.L3>:
+    ea56:	1f 53       	inc	r15		;
+
+0000ea58 <.LVL4>:
+    ea58:	cf 4d ff ff 	mov.b	r13,	-1(r15)	; 0xffff
+    ea5c:	f9 3f       	jmp	$-12     	;abs 0xea50

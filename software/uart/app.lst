@@ -1,0 +1,259 @@
+
+app.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000e000 l    d  .rodata	00000000 .rodata
+0000e012 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000200 l    d  .bss	00000000 .bss
+00000202 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 omsp_uart.c
+00000000 l    df *ABS*	00000000 /home/radithya007/Downloads/msp430-gcc-9.3.1.11_linux64/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 crt_callexit.o
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+0000e082 g     F .text	0000000e putchar
+0000e076 g     F .text	0000000c uartinit
+0000e090 g     F .text	0000000e INT_uart_rx
+0000e02a g     F .text	00000004 __crt0_call_exit
+0000e012 g     F .text	00000004 __crt0_start
+0000e016 g     F .text	0000000e __crt0_init_bss
+00000002 g       *ABS*	00000000 __bsssize
+0000e02e g     F .text	0000001c myprintf
+00000200 g     O .bss	00000001 rxdata
+00000202 g       .noinit	00000000 end
+0000e012 g       .text	00000000 _start
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000e0a0 g     F .text	00000014 memset
+0000e04a g     F .text	0000002c main
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000200 g       .bss	00000000 __bssstart
+00002200 g       .noinit	00000000 __stack
+00000200 g       .data	00000000 _edata
+0000e09e  w    F .text	00000004 exit
+00000000  w      *ABS*	00000000 __high_bssstart
+0000e024 g     F .text	00000006 __crt0_call_main
+0000e09e  w    F .text	00000004 _exit
+
+
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	90 e0       	interrupt service routine at 0xe090
+
+Disassembly of section .text:
+
+0000e012 <__crt0_start>:
+    e012:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000e016 <__crt0_init_bss>:
+    e016:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000e01a <.Loc.76.1>:
+    e01a:	0d 43       	clr	r13		;
+
+0000e01c <.Loc.77.1>:
+    e01c:	3e 40 02 00 	mov	#2,	r14	;
+
+0000e020 <.Loc.81.1>:
+    e020:	b0 12 a0 e0 	call	#-8032		;#0xe0a0
+
+0000e024 <__crt0_call_main>:
+    e024:	0c 43       	clr	r12		;
+
+0000e026 <.Loc.254.1>:
+    e026:	b0 12 4a e0 	call	#-8118		;#0xe04a
+
+0000e02a <__crt0_call_exit>:
+    e02a:	b0 12 9e e0 	call	#-8034		;#0xe09e
+
+0000e02e <myprintf>:
+#include "omsp_system.h"
+#include "omsp_uart.h"
+
+void myprintf(char *c) {
+    e02e:	0a 12       	push	r10		;
+
+0000e030 <.LCFI0>:
+    e030:	0a 4c       	mov	r12,	r10	;
+
+0000e032 <.Loc.5.1>:
+  while (*c)
+    e032:	6c 4c       	mov.b	@r12,	r12	;
+
+0000e034 <.LVL1>:
+    e034:	ca 93 00 00 	cmp.b	#0,	0(r10)	;r3 As==00
+    e038:	06 24       	jz	$+14     	;abs 0xe046
+    e03a:	1a 53       	inc	r10		;
+
+0000e03c <.L3>:
+    putchar(*c++);
+    e03c:	b0 12 82 e0 	call	#-8062		;#0xe082
+
+0000e040 <.LVL3>:
+  while (*c)
+    e040:	7c 4a       	mov.b	@r10+,	r12	;
+
+0000e042 <.LVL4>:
+    e042:	0c 93       	cmp	#0,	r12	;r3 As==00
+    e044:	fb 23       	jnz	$-8      	;abs 0xe03c
+
+0000e046 <.L1>:
+}
+    e046:	3a 41       	pop	r10		;
+
+0000e048 <.LCFI1>:
+    e048:	30 41       	ret			
+
+0000e04a <main>:
+
+int main(void) {
+    e04a:	0a 12       	push	r10		;
+
+0000e04c <.LCFI2>:
+  WDTCTL = WDTPW | WDTHOLD;          // Disable watchdog timer
+    e04c:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    e050:	20 01 
+
+0000e052 <.Loc.12.1>:
+
+  P1DIR  = 0xFF;                     // P1 as output
+    e052:	f2 43 22 00 	mov.b	#-1,	&0x0022	;r3 As==11
+
+0000e056 <.Loc.14.1>:
+
+  uartinit();
+    e056:	b0 12 76 e0 	call	#-8074		;#0xe076
+
+0000e05a <.LBB4>:
+  while (*c)
+    e05a:	3a 40 01 e0 	mov	#-8191,	r10	;#0xe001
+
+0000e05e <.Loc.5.1>:
+    e05e:	7c 40 48 00 	mov.b	#72,	r12	;#0x0048
+
+0000e062 <.L10>:
+    putchar(*c++);
+    e062:	b0 12 82 e0 	call	#-8062		;#0xe082
+
+0000e066 <.LVL8>:
+  while (*c)
+    e066:	7c 4a       	mov.b	@r10+,	r12	;
+
+0000e068 <.LVL9>:
+    e068:	0c 93       	cmp	#0,	r12	;r3 As==00
+    e06a:	fb 23       	jnz	$-8      	;abs 0xe062
+
+0000e06c <.LBE4>:
+
+  myprintf("Hello World!\n");
+  
+  P1OUT  = 0xF0;                    //  Simulation Stopping Command
+    e06c:	f2 40 f0 ff 	mov.b	#-16,	&0x0021	;#0xfff0
+    e070:	21 00 
+
+0000e072 <.Loc.20.1>:
+
+}
+    e072:	3a 41       	pop	r10		;
+
+0000e074 <.LCFI3>:
+    e074:	30 41       	ret			
+
+0000e076 <uartinit>:
+// BAUDRATE = 10M @ 20MHz clock
+// The BAUD divisor is equal to ceil(systemclock/baudrate - 1)
+#define BAUD 1
+
+void uartinit() {
+  UART_BAUD = BAUD;         
+    e076:	92 43 82 00 	mov	#1,	&0x0082	;r3 As==01
+
+0000e07a <.Loc.10.1>:
+  UART_CTL  = UART_EN | UART_IEN_RX;
+    e07a:	f2 40 11 00 	mov.b	#17,	&0x0080	;#0x0011
+    e07e:	80 00 
+
+0000e080 <.Loc.11.1>:
+}
+    e080:	30 41       	ret			
+
+0000e082 <putchar>:
+
+int putchar (int txdata) {
+  while (UART_STAT & UART_TX_FULL);
+    e082:	f2 b2 81 00 	bit.b	#8,	&0x0081	;r2 As==11
+    e086:	fd 23       	jnz	$-4      	;abs 0xe082
+
+0000e088 <.Loc.15.1>:
+  UART_TXD = txdata;
+    e088:	c2 4c 84 00 	mov.b	r12,	&0x0084	;
+
+0000e08c <.Loc.16.1>:
+  return 0;
+}
+    e08c:	4c 43       	clr.b	r12		;
+
+0000e08e <.LVL1>:
+    e08e:	30 41       	ret			
+
+0000e090 <INT_uart_rx>:
+
+char rxdata;
+
+interrupt (UART_RX_VECTOR) INT_uart_rx(void) {
+  rxdata = UART_RXD;
+    e090:	d2 42 85 00 	mov.b	&0x0085,&0x0200	;0x0085
+    e094:	00 02 
+
+0000e096 <.Loc.23.1>:
+  UART_STAT = UART_RX_PND;
+    e096:	f2 40 10 00 	mov.b	#16,	&0x0081	;#0x0010
+    e09a:	81 00 
+
+0000e09c <.Loc.24.1>:
+}
+    e09c:	00 13       	reti			
+
+0000e09e <_exit>:
+    e09e:	ff 3f       	jmp	$+0      	;abs 0xe09e
+
+0000e0a0 <memset>:
+    e0a0:	0e 5c       	add	r12,	r14	;
+
+0000e0a2 <L0^A>:
+    e0a2:	0f 4c       	mov	r12,	r15	;
+
+0000e0a4 <.L2>:
+    e0a4:	0f 9e       	cmp	r14,	r15	;
+    e0a6:	01 20       	jnz	$+4      	;abs 0xe0aa
+
+0000e0a8 <.Loc.104.1>:
+    e0a8:	30 41       	ret			
+
+0000e0aa <.L3>:
+    e0aa:	1f 53       	inc	r15		;
+
+0000e0ac <.LVL4>:
+    e0ac:	cf 4d ff ff 	mov.b	r13,	-1(r15)	; 0xffff
+    e0b0:	f9 3f       	jmp	$-12     	;abs 0xe0a4

@@ -1,0 +1,78 @@
+
+app.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000e000 l    d  .rodata	00000000 .rodata
+0000e004 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000200 l    d  .bss	00000000 .bss
+00000200 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    df *ABS*	00000000 /home/radithya007/Downloads/msp430-gcc-9.3.1.11_linux64/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 main.c
+0000e004 g     F .text	00000004 __crt0_start
+00000200 g       .noinit	00000000 end
+0000e004 g       .text	00000000 _start
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000e00e g     F .text	00000016 main
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00002200 g       .noinit	00000000 __stack
+00000200 g       .data	00000000 _edata
+00000000  w      *ABS*	00000000 __high_bssstart
+0000e008 g     F .text	00000006 __crt0_call_main
+
+
+
+Disassembly of section .text:
+
+0000e004 <__crt0_start>:
+    e004:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000e008 <__crt0_call_main>:
+    e008:	0c 43       	clr	r12		;
+
+0000e00a <.Loc.254.1>:
+    e00a:	b0 12 0e e0 	call	#-8178		;#0xe00e
+
+0000e00e <main>:
+#include "omsp_system.h"
+
+int main(void) {
+  WDTCTL = WDTPW | WDTHOLD;
+    e00e:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    e012:	20 01 
+
+0000e014 <.LVL0>:
+
+  int c = 0;
+
+  P1DIR  = 0xFF;                     
+    e014:	f2 43 22 00 	mov.b	#-1,	&0x0022	;r3 As==11
+    e018:	4c 43       	clr.b	r12		;
+
+0000e01a <.L2>:
+
+  while (1) 
+    P1OUT = c++;
+    e01a:	c2 4c 21 00 	mov.b	r12,	&0x0021	;
+
+0000e01e <.Loc.10.1>:
+  while (1) 
+    e01e:	1c 53       	inc	r12		;
+
+0000e020 <.LVL2>:
+    e020:	fc 3f       	jmp	$-6      	;abs 0xe01a

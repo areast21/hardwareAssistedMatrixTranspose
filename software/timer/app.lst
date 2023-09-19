@@ -1,0 +1,612 @@
+
+app.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000e000 l    d  .rodata	00000000 .rodata
+0000e004 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000210 l    d  .bss	00000000 .bss
+00000214 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 omsp_uart.c
+00000000 l    df *ABS*	00000000 /home/radithya007/Downloads/msp430-gcc-9.3.1.11_linux64/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_movedata.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+0000e1b8 g     F .text	0000000e putchar
+0000e1ac g     F .text	0000000c uartinit
+0000e0e8 g     F .text	00000014 euclid
+0000e1c6 g     F .text	0000000e INT_uart_rx
+0000e1d4 g     F .text	00000042 memmove
+0000e224 g       .text	00000000 .hidden __mspabi_func_epilog_6
+0000e030 g     F .text	00000098 puthex
+0000e004 g     F .text	00000004 __crt0_start
+0000e008 g     F .text	0000000e __crt0_init_bss
+00000004 g       *ABS*	00000000 __bsssize
+0000e22e g       .text	00000000 .hidden __mspabi_func_epilog_1
+0000e22a g       .text	00000000 .hidden __mspabi_func_epilog_3
+00000212 g     O .bss	00000001 rxdata
+00000214 g       .noinit	00000000 end
+0000e004 g       .text	00000000 _start
+00000010 g       *ABS*	00000000 __romdatacopysize
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000e210 g     F .text	00000014 memset
+0000e0fc g     F .text	000000b2 main
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+00000210 g     O .bss	00000002 count
+0000e232 g       *ABS*	00000000 __romdatastart
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000210 g       .bss	00000000 __bssstart
+0000e226 g       .text	00000000 .hidden __mspabi_func_epilog_5
+00002200 g       .noinit	00000000 __stack
+00000200 g     O .data	00000010 c16
+00000210 g       .data	00000000 _edata
+0000e0c8 g     F .text	00000020 TimerLap
+00000000  w      *ABS*	00000000 __high_bssstart
+0000e02a g     F .text	00000006 __crt0_call_main
+00000200 g       .data	00000000 __datastart
+0000e016 g     F .text	00000014 __crt0_movedata
+0000e22c g       .text	00000000 .hidden __mspabi_func_epilog_2
+0000e222 g       .text	00000000 .hidden __mspabi_func_epilog_7
+0000e228 g       .text	00000000 .hidden __mspabi_func_epilog_4
+
+
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	c6 e1       	interrupt service routine at 0xe1c6
+
+Disassembly of section .text:
+
+0000e004 <__crt0_start>:
+    e004:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000e008 <__crt0_init_bss>:
+    e008:	3c 40 10 02 	mov	#528,	r12	;#0x0210
+
+0000e00c <.Loc.76.1>:
+    e00c:	0d 43       	clr	r13		;
+
+0000e00e <.Loc.77.1>:
+    e00e:	3e 40 04 00 	mov	#4,	r14	;
+
+0000e012 <.Loc.81.1>:
+    e012:	b0 12 10 e2 	call	#-7664		;#0xe210
+
+0000e016 <__crt0_movedata>:
+    e016:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000e01a <.Loc.116.1>:
+    e01a:	3d 40 32 e2 	mov	#-7630,	r13	;#0xe232
+
+0000e01e <.Loc.119.1>:
+    e01e:	0d 9c       	cmp	r12,	r13	;
+
+0000e020 <.Loc.120.1>:
+    e020:	04 24       	jz	$+10     	;abs 0xe02a
+
+0000e022 <.Loc.122.1>:
+    e022:	3e 40 10 00 	mov	#16,	r14	;#0x0010
+
+0000e026 <.Loc.124.1>:
+    e026:	b0 12 d4 e1 	call	#-7724		;#0xe1d4
+
+0000e02a <__crt0_call_main>:
+    e02a:	0c 43       	clr	r12		;
+
+0000e02c <.Loc.254.1>:
+    e02c:	b0 12 fc e0 	call	#-7940		;#0xe0fc
+
+0000e030 <puthex>:
+#include "omsp_system.h"
+#include "omsp_uart.h"
+
+char c16[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+
+void puthex(unsigned k) {
+    e030:	0a 12       	push	r10		;
+
+0000e032 <.LCFI0>:
+    e032:	0a 4c       	mov	r12,	r10	;
+
+0000e034 <.Loc.7.1>:
+  putchar(c16[((k>>12) & 0xF)]);
+    e034:	12 c3       	clrc			
+    e036:	0c 10       	rrc	r12		;
+    e038:	12 c3       	clrc			
+    e03a:	0c 10       	rrc	r12		;
+    e03c:	12 c3       	clrc			
+    e03e:	0c 10       	rrc	r12		;
+    e040:	12 c3       	clrc			
+    e042:	0c 10       	rrc	r12		;
+    e044:	12 c3       	clrc			
+    e046:	0c 10       	rrc	r12		;
+    e048:	12 c3       	clrc			
+    e04a:	0c 10       	rrc	r12		;
+    e04c:	12 c3       	clrc			
+    e04e:	0c 10       	rrc	r12		;
+    e050:	12 c3       	clrc			
+    e052:	0c 10       	rrc	r12		;
+    e054:	12 c3       	clrc			
+    e056:	0c 10       	rrc	r12		;
+    e058:	12 c3       	clrc			
+    e05a:	0c 10       	rrc	r12		;
+    e05c:	12 c3       	clrc			
+    e05e:	0c 10       	rrc	r12		;
+    e060:	12 c3       	clrc			
+    e062:	0c 10       	rrc	r12		;
+
+0000e064 <.LVL1>:
+    e064:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e068:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e06c <.LVL2>:
+  putchar(c16[((k>>8 ) & 0xF)]);
+    e06c:	0c 4a       	mov	r10,	r12	;
+    e06e:	12 c3       	clrc			
+    e070:	0c 10       	rrc	r12		;
+    e072:	12 c3       	clrc			
+    e074:	0c 10       	rrc	r12		;
+    e076:	12 c3       	clrc			
+    e078:	0c 10       	rrc	r12		;
+    e07a:	12 c3       	clrc			
+    e07c:	0c 10       	rrc	r12		;
+    e07e:	12 c3       	clrc			
+    e080:	0c 10       	rrc	r12		;
+    e082:	12 c3       	clrc			
+    e084:	0c 10       	rrc	r12		;
+    e086:	12 c3       	clrc			
+    e088:	0c 10       	rrc	r12		;
+    e08a:	12 c3       	clrc			
+    e08c:	0c 10       	rrc	r12		;
+
+0000e08e <.Loc.8.1>:
+    e08e:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000e092 <.Loc.8.1>:
+    e092:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e096:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e09a <.LVL3>:
+  putchar(c16[((k>>4 ) & 0xF)]);
+    e09a:	0c 4a       	mov	r10,	r12	;
+    e09c:	12 c3       	clrc			
+    e09e:	0c 10       	rrc	r12		;
+    e0a0:	12 c3       	clrc			
+    e0a2:	0c 10       	rrc	r12		;
+    e0a4:	12 c3       	clrc			
+    e0a6:	0c 10       	rrc	r12		;
+    e0a8:	12 c3       	clrc			
+    e0aa:	0c 10       	rrc	r12		;
+
+0000e0ac <.Loc.9.1>:
+    e0ac:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000e0b0 <.Loc.9.1>:
+    e0b0:	5c 4c 00 02 	mov.b	512(r12),r12	;0x00200
+    e0b4:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e0b8 <.LVL4>:
+  putchar(c16[((k    ) & 0xF)]);
+    e0b8:	7a f0 0f 00 	and.b	#15,	r10	;#0x000f
+
+0000e0bc <.LVL5>:
+    e0bc:	5c 4a 00 02 	mov.b	512(r10),r12	;0x00200
+    e0c0:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e0c4 <.LVL6>:
+}
+    e0c4:	3a 41       	pop	r10		;
+
+0000e0c6 <.LCFI1>:
+    e0c6:	30 41       	ret			
+
+0000e0c8 <TimerLap>:
+
+unsigned count = 0;
+
+unsigned TimerLap() {
+  unsigned lap;
+  TACTL &= ~(MC1 | MC0);
+    e0c8:	3d 40 60 01 	mov	#352,	r13	;#0x0160
+    e0cc:	bd f0 cf ff 	and	#-49,	0(r13)	;#0xffcf
+    e0d0:	00 00 
+
+0000e0d2 <.Loc.18.1>:
+  lap = TAR - count;
+    e0d2:	3e 40 70 01 	mov	#368,	r14	;#0x0170
+    e0d6:	2c 4e       	mov	@r14,	r12	;
+
+0000e0d8 <.Loc.18.1>:
+    e0d8:	1c 82 10 02 	sub	&0x0210,r12	;0x0210
+
+0000e0dc <.Loc.19.1>:
+  count = TAR;
+    e0dc:	a2 4e 10 02 	mov	@r14,	&0x0210	;
+
+0000e0e0 <.Loc.20.1>:
+  TACTL |= MC1;
+    e0e0:	bd d0 20 00 	bis	#32,	0(r13)	;#0x0020
+    e0e4:	00 00 
+
+0000e0e6 <.Loc.21.1>:
+  return lap;
+}
+    e0e6:	30 41       	ret			
+
+0000e0e8 <euclid>:
+
+unsigned euclid(unsigned a, unsigned b) {
+  while (a != b) {
+    e0e8:	0c 9d       	cmp	r13,	r12	;
+    e0ea:	05 24       	jz	$+12     	;abs 0xe0f6
+
+0000e0ec <.L12>:
+    if (a > b)
+    e0ec:	0d 9c       	cmp	r12,	r13	;
+    e0ee:	04 2c       	jc	$+10     	;abs 0xe0f8
+
+0000e0f0 <.Loc.27.1>:
+      a = a - b;
+    e0f0:	0c 8d       	sub	r13,	r12	;
+
+0000e0f2 <.LVL9>:
+  while (a != b) {
+    e0f2:	0c 9d       	cmp	r13,	r12	;
+    e0f4:	fb 23       	jnz	$-8      	;abs 0xe0ec
+
+0000e0f6 <.L5>:
+    else
+      b = b - a;
+  }
+  return a;
+}
+    e0f6:	30 41       	ret			
+
+0000e0f8 <.L6>:
+      b = b - a;
+    e0f8:	0d 8c       	sub	r12,	r13	;
+
+0000e0fa <.LVL10>:
+  while (a != b) {
+    e0fa:	f6 3f       	jmp	$-18     	;abs 0xe0e8
+
+0000e0fc <main>:
+
+int main(void) {
+    e0fc:	0a 12       	push	r10		;
+
+0000e0fe <.LCFI2>:
+    e0fe:	09 12       	push	r9		;
+
+0000e100 <.LCFI3>:
+  int e, d;
+
+  WDTCTL = WDTPW | WDTHOLD;  // Disable watchdog timer
+    e100:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    e104:	20 01 
+
+0000e106 <.Loc.38.1>:
+  TACTL  |= (TASSEL1 | MC1 | TACLR); // Configure timer
+    e106:	b2 d0 24 02 	bis	#548,	&0x0160	;#0x0224
+    e10a:	60 01 
+
+0000e10c <.Loc.40.1>:
+
+  uartinit();
+    e10c:	b0 12 ac e1 	call	#-7764		;#0xe1ac
+
+0000e110 <.LBB9>:
+  puthex(e);
+  putchar(' ');
+  puthex(d);
+  */
+  
+  for(int j = 16381; j <= 65535 ; j = j + 1000){
+    e110:	3a 40 fd 3f 	mov	#16381,	r10	;#0x3ffd
+
+0000e114 <.L15>:
+  TACTL &= ~(MC1 | MC0);
+    e114:	b2 f0 cf ff 	and	#-49,	&0x0160	;#0xffcf
+    e118:	60 01 
+
+0000e11a <.Loc.18.1>:
+  lap = TAR - count;
+    e11a:	1c 42 70 01 	mov	&0x0170,r12	;0x0170
+
+0000e11e <.Loc.19.1>:
+  count = TAR;
+    e11e:	92 42 70 01 	mov	&0x0170,&0x0210	;0x0170
+    e122:	10 02 
+
+0000e124 <.Loc.20.1>:
+  TACTL |= MC1;
+    e124:	b2 d0 20 00 	bis	#32,	&0x0160	;#0x0020
+    e128:	60 01 
+
+0000e12a <.LBE10>:
+  	
+  	TimerLap();
+  	P1OUT = 0x01;
+    e12a:	d2 43 21 00 	mov.b	#1,	&0x0021	;r3 As==01
+
+0000e12e <.LBB12>:
+    e12e:	0c 4a       	mov	r10,	r12	;
+
+0000e130 <.L14>:
+      b = b - a;
+    e130:	3c 53       	add	#-1,	r12	;r3 As==11
+
+0000e132 <.Loc.25.1>:
+  while (a != b) {
+    e132:	1c 93       	cmp	#1,	r12	;r3 As==01
+    e134:	fd 23       	jnz	$-4      	;abs 0xe130
+
+0000e136 <.LBE15>:
+  	e = euclid(1,j);
+  	P1OUT = 0x00;
+    e136:	c2 43 21 00 	mov.b	#0,	&0x0021	;r3 As==00
+
+0000e13a <.LBB16>:
+  TACTL &= ~(MC1 | MC0);
+    e13a:	b2 f0 cf ff 	and	#-49,	&0x0160	;#0xffcf
+    e13e:	60 01 
+
+0000e140 <.Loc.18.1>:
+  lap = TAR - count;
+    e140:	19 42 70 01 	mov	&0x0170,r9	;0x0170
+
+0000e144 <.Loc.18.1>:
+    e144:	19 82 10 02 	sub	&0x0210,r9	;0x0210
+
+0000e148 <.LVL17>:
+  count = TAR;
+    e148:	92 42 70 01 	mov	&0x0170,&0x0210	;0x0170
+    e14c:	10 02 
+
+0000e14e <.Loc.20.1>:
+  TACTL |= MC1;
+    e14e:	b2 d0 20 00 	bis	#32,	&0x0160	;#0x0020
+    e152:	60 01 
+
+0000e154 <.LBE16>:
+  	d = TimerLap();
+	
+	putchar('O');
+    e154:	7c 40 4f 00 	mov.b	#79,	r12	;#0x004f
+    e158:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e15c <.LVL19>:
+	puthex(j);
+    e15c:	0c 4a       	mov	r10,	r12	;
+    e15e:	b0 12 30 e0 	call	#-8144		;#0xe030
+
+0000e162 <.LVL20>:
+	putchar(' ');
+    e162:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e166:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e16a <.LVL21>:
+  	putchar('R');
+    e16a:	7c 40 52 00 	mov.b	#82,	r12	;#0x0052
+    e16e:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e172 <.LVL22>:
+  	puthex(e);
+    e172:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    e174:	b0 12 30 e0 	call	#-8144		;#0xe030
+
+0000e178 <.LVL23>:
+  	putchar(' ');
+    e178:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e17c:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e180 <.LVL24>:
+  	putchar('C');
+    e180:	7c 40 43 00 	mov.b	#67,	r12	;#0x0043
+    e184:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e188 <.LVL25>:
+  	puthex(d);
+    e188:	0c 49       	mov	r9,	r12	;
+    e18a:	b0 12 30 e0 	call	#-8144		;#0xe030
+
+0000e18e <.LVL26>:
+  	putchar(' ');
+    e18e:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e192:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e196 <.LVL27>:
+  	putchar(' ');
+    e196:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e19a:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e19e <.LVL28>:
+  	putchar(' ');
+    e19e:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    e1a2:	b0 12 b8 e1 	call	#-7752		;#0xe1b8
+
+0000e1a6 <.LVL29>:
+  for(int j = 16381; j <= 65535 ; j = j + 1000){
+    e1a6:	3a 50 e8 03 	add	#1000,	r10	;#0x03e8
+
+0000e1aa <.Loc.65.1>:
+  	TimerLap();
+    e1aa:	b4 3f       	jmp	$-150    	;abs 0xe114
+
+0000e1ac <uartinit>:
+// BAUDRATE = 10M @ 20MHz clock
+// The BAUD divisor is equal to ceil(systemclock/baudrate - 1)
+#define BAUD 1
+
+void uartinit() {
+  UART_BAUD = BAUD;         
+    e1ac:	92 43 82 00 	mov	#1,	&0x0082	;r3 As==01
+
+0000e1b0 <L0^A>:
+  UART_CTL  = UART_EN | UART_IEN_RX;
+    e1b0:	f2 40 11 00 	mov.b	#17,	&0x0080	;#0x0011
+    e1b4:	80 00 
+
+0000e1b6 <.Loc.11.1>:
+}
+    e1b6:	30 41       	ret			
+
+0000e1b8 <putchar>:
+
+int putchar (int txdata) {
+  while (UART_STAT & UART_TX_FULL);
+    e1b8:	f2 b2 81 00 	bit.b	#8,	&0x0081	;r2 As==11
+    e1bc:	fd 23       	jnz	$-4      	;abs 0xe1b8
+
+0000e1be <.Loc.15.1>:
+  UART_TXD = txdata;
+    e1be:	c2 4c 84 00 	mov.b	r12,	&0x0084	;
+
+0000e1c2 <.Loc.16.1>:
+  return 0;
+}
+    e1c2:	4c 43       	clr.b	r12		;
+
+0000e1c4 <.LVL1>:
+    e1c4:	30 41       	ret			
+
+0000e1c6 <INT_uart_rx>:
+
+char rxdata;
+
+interrupt (UART_RX_VECTOR) INT_uart_rx(void) {
+  rxdata = UART_RXD;
+    e1c6:	d2 42 85 00 	mov.b	&0x0085,&0x0212	;0x0085
+    e1ca:	12 02 
+
+0000e1cc <.Loc.23.1>:
+  UART_STAT = UART_RX_PND;
+    e1cc:	f2 40 10 00 	mov.b	#16,	&0x0081	;#0x0010
+    e1d0:	81 00 
+
+0000e1d2 <.Loc.24.1>:
+}
+    e1d2:	00 13       	reti			
+
+0000e1d4 <memmove>:
+    e1d4:	0a 12       	push	r10		;
+
+0000e1d6 <.LCFI0>:
+    e1d6:	09 12       	push	r9		;
+
+0000e1d8 <.LCFI1>:
+    e1d8:	0f 4d       	mov	r13,	r15	;
+    e1da:	0f 5e       	add	r14,	r15	;
+
+0000e1dc <.Loc.69.1>:
+    e1dc:	0d 9c       	cmp	r12,	r13	;
+    e1de:	02 2c       	jc	$+6      	;abs 0xe1e4
+
+0000e1e0 <.Loc.69.1>:
+    e1e0:	0c 9f       	cmp	r15,	r12	;
+    e1e2:	07 28       	jnc	$+16     	;abs 0xe1f2
+
+0000e1e4 <.L2>:
+    e1e4:	0e 4c       	mov	r12,	r14	;
+
+0000e1e6 <.L4>:
+    e1e6:	0d 9f       	cmp	r15,	r13	;
+    e1e8:	0a 24       	jz	$+22     	;abs 0xe1fe
+
+0000e1ea <.LVL3>:
+    e1ea:	fe 4d 00 00 	mov.b	@r13+,	0(r14)	;
+
+0000e1ee <.LVL4>:
+    e1ee:	1e 53       	inc	r14		;
+    e1f0:	fa 3f       	jmp	$-10     	;abs 0xe1e6
+
+0000e1f2 <.L3>:
+    e1f2:	09 4e       	mov	r14,	r9	;
+    e1f4:	39 e3       	inv	r9		;
+
+0000e1f6 <.Loc.74.1>:
+    e1f6:	4d 43       	clr.b	r13		;
+
+0000e1f8 <.L5>:
+    e1f8:	3d 53       	add	#-1,	r13	;r3 As==11
+
+0000e1fa <.LVL7>:
+    e1fa:	09 9d       	cmp	r13,	r9	;
+    e1fc:	01 20       	jnz	$+4      	;abs 0xe200
+
+0000e1fe <.L9>:
+    e1fe:	16 3c       	jmp	$+46     	;abs 0xe22c
+
+0000e200 <.L6>:
+    e200:	0b 4e       	mov	r14,	r11	;
+    e202:	0b 5d       	add	r13,	r11	;
+    e204:	0b 5c       	add	r12,	r11	;
+    e206:	0a 4f       	mov	r15,	r10	;
+    e208:	0a 5d       	add	r13,	r10	;
+
+0000e20a <.LVL10>:
+    e20a:	eb 4a 00 00 	mov.b	@r10,	0(r11)	;
+    e20e:	f4 3f       	jmp	$-22     	;abs 0xe1f8
+
+0000e210 <memset>:
+    e210:	0e 5c       	add	r12,	r14	;
+
+0000e212 <.LVL2>:
+    e212:	0f 4c       	mov	r12,	r15	;
+
+0000e214 <.L2>:
+    e214:	0f 9e       	cmp	r14,	r15	;
+
+0000e216 <L0^A>:
+    e216:	01 20       	jnz	$+4      	;abs 0xe21a
+
+0000e218 <.Loc.104.1>:
+    e218:	30 41       	ret			
+
+0000e21a <.L3>:
+    e21a:	1f 53       	inc	r15		;
+
+0000e21c <.LVL4>:
+    e21c:	cf 4d ff ff 	mov.b	r13,	-1(r15)	; 0xffff
+    e220:	f9 3f       	jmp	$-12     	;abs 0xe214
+
+0000e222 <__mspabi_func_epilog_7>:
+    e222:	34 41       	pop	r4		;
+
+0000e224 <__mspabi_func_epilog_6>:
+    e224:	35 41       	pop	r5		;
+
+0000e226 <__mspabi_func_epilog_5>:
+    e226:	36 41       	pop	r6		;
+
+0000e228 <__mspabi_func_epilog_4>:
+    e228:	37 41       	pop	r7		;
+
+0000e22a <__mspabi_func_epilog_3>:
+    e22a:	38 41       	pop	r8		;
+
+0000e22c <__mspabi_func_epilog_2>:
+    e22c:	39 41       	pop	r9		;
+
+0000e22e <__mspabi_func_epilog_1>:
+    e22e:	3a 41       	pop	r10		;
+    e230:	30 41       	ret			
