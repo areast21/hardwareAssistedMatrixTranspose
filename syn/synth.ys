@@ -1,0 +1,46 @@
+read_liberty -lib /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+read_verilog ../rtl/omsp_alu.v
+read_verilog ../rtl/omsp_and_gate.v
+read_verilog ../rtl/omsp_clock_gate.v
+read_verilog ../rtl/omsp_clock_module.v
+read_verilog ../rtl/omsp_clock_mux.v
+read_verilog ../rtl/omsp_dbg.v
+read_verilog ../rtl/omsp_dbg_hwbrk.v
+read_verilog ../rtl/omsp_dbg_i2c.v
+read_verilog ../rtl/omsp_dbg_uart.v
+read_verilog ../rtl/omsp_execution_unit.v
+read_verilog ../rtl/omsp_frontend.v
+read_verilog ../rtl/omsp_mem_backbone.v
+read_verilog ../rtl/omsp_multiplier.v
+read_verilog ../rtl/omsp_register_file.v
+read_verilog ../rtl/omsp_scan_mux.v
+read_verilog ../rtl/omsp_sfr.v
+read_verilog ../rtl/omsp_sync_cell.v
+read_verilog ../rtl/omsp_sync_reset.v
+read_verilog ../rtl/omsp_uart.v
+read_verilog ../rtl/omsp_wakeup_cell.v
+read_verilog ../rtl/omsp_watchdog.v
+read_verilog ../rtl/openMSP430.v
+read_verilog ../rtl/openMSP430_defines.v
+read_verilog ../rtl/openMSP430_undefines.v
+read_verilog ../rtl/periph/omsp_timerA.v
+read_verilog ../rtl/periph/omsp_gpio.v
+
+read_verilog -I../rtl ../software/transpose/toplevel.v 
+read_verilog ../software/transpose/transpose_support.v
+# read_verilog -I../rtl ../software/uart/toplevel.v
+# read_verilog -I../rtl ../software/timer/toplevel.v
+
+# read_verilog ../software/mmreg/mmreg.v
+# read_verilog -I../rtl ../software/mmreg/toplevel.v
+
+synth -top toplevel
+flatten
+dfflibmap -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+opt_clean
+
+stat -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog toplevel_gl.v
+
